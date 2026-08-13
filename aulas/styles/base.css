@@ -43,6 +43,7 @@ body,
   font-size: var(--ds-text-base);
   line-height: var(--ds-leading-normal);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* --- títulos -------------------------------------------------------------- */
@@ -56,12 +57,27 @@ body,
   text-wrap: balance;
 }
 
+/* O h2 é a divisão interna do slide: ganha um tique de índigo à esquerda, para
+   a turma achar onde um assunto acaba e o outro começa sem precisar ler. */
 .slidev-layout h2 {
+  position: relative;
   margin: var(--ds-space-6) 0 var(--ds-space-3);
+  padding-left: var(--ds-space-4);
   font-size: var(--ds-text-xl);
   font-weight: 650;
   line-height: var(--ds-leading-tight);
   letter-spacing: -0.01em;
+}
+
+.slidev-layout h2::before {
+  content: "";
+  position: absolute;
+  top: 0.18em;
+  bottom: 0.18em;
+  left: 0;
+  width: 4px;
+  border-radius: 4px;
+  background: var(--ds-accent);
 }
 
 .slidev-layout h3 {
@@ -99,7 +115,7 @@ body,
 .slidev-layout p {
   margin: var(--ds-space-4) 0;
   line-height: var(--ds-leading-loose);
-  max-width: 62ch;
+  max-width: 60ch;
 }
 
 .slidev-layout strong,
@@ -110,6 +126,31 @@ body,
 
 .slidev-layout em {
   font-style: italic;
+}
+
+/* Marca-texto. Em aula ele quer dizer "isto cai na prova / anote isto", então
+   o traço é desenhado com gradiente, na altura da metade de baixo da palavra —
+   como caneta de verdade, não como retângulo de cor sólida. */
+.slidev-layout mark {
+  padding: 0 0.15em;
+  border-radius: 2px;
+  background: linear-gradient(
+    to top,
+    var(--ds-mark) 0%,
+    var(--ds-mark) 62%,
+    transparent 62%
+  );
+  color: inherit;
+  font-weight: 600;
+}
+
+/* Sigla e termo técnico: `<abbr title="...">MCT</abbr>` mostra o nome inteiro
+   ao passar o mouse e fica sublinhado pontilhado o tempo todo, para a turma
+   saber que aquilo tem uma definição por trás. */
+.slidev-layout abbr[title] {
+  border-bottom: 1px dotted var(--ds-muted);
+  cursor: help;
+  text-decoration: none;
 }
 
 .slidev-layout a {
@@ -142,25 +183,25 @@ body,
   padding-left: 0;
 }
 
-/* Marcador desenhado na mão: um traço curto no accent, alinhado com a primeira
-   linha. `list-style: none` + padding é mais previsível que ::marker na hora de
+/* Marcador desenhado na mão: um ponto de índigo alinhado com a primeira linha.
+   `list-style: none` + padding é mais previsível que ::marker na hora de
    exportar PDF. */
 .slidev-layout ul > li {
   position: relative;
   margin: var(--ds-space-2) 0;
-  padding-left: 1.35em;
+  padding-left: 1.4em;
   line-height: var(--ds-leading-loose);
 }
 
 .slidev-layout ul > li::before {
   content: "";
   position: absolute;
-  top: 0.72em;
-  left: 0.1em;
-  width: 0.7em;
-  height: 2px;
+  top: 0.62em;
+  left: 0.15em;
+  width: 0.42em;
+  height: 0.42em;
+  border-radius: 50%;
   background: var(--ds-accent);
-  border-radius: 2px;
 }
 
 .slidev-layout ol > li {
@@ -171,19 +212,36 @@ body,
 
 .slidev-layout ol > li::marker {
   color: var(--ds-accent);
-  font-weight: 650;
+  font-weight: 700;
 }
 
-/* Sublistas: menores, sem o traço, recuadas. */
+/* Sublistas: menores, com o marcador vazado, recuadas. */
 .slidev-layout li ul > li::before {
-  background: var(--ds-muted);
-  width: 0.45em;
+  background: transparent;
+  border: 2px solid var(--ds-muted);
+  width: 0.4em;
+  height: 0.4em;
 }
 
 .slidev-layout li :is(ul, ol) {
   margin: var(--ds-space-1) 0;
-  font-size: 0.92em;
+  font-size: 0.94em;
   color: var(--ds-muted);
+}
+
+/* Lista de tarefa do markdown (`- [ ] item`): vira checklist de verdade, sem o
+   ponto do marcador. Serve para roteiro de estudo e para os objetivos da aula. */
+.slidev-layout ul > li:has(> input[type="checkbox"]) {
+  padding-left: 0;
+}
+
+.slidev-layout ul > li:has(> input[type="checkbox"])::before {
+  content: none;
+}
+
+.slidev-layout input[type="checkbox"] {
+  margin-right: var(--ds-space-2);
+  accent-color: var(--ds-accent);
 }
 
 /* --- citação -------------------------------------------------------------- */
@@ -239,10 +297,10 @@ body,
 
 .slidev-layout th {
   padding: var(--ds-space-2) var(--ds-space-3);
-  border-bottom: 2px solid var(--ds-rule);
-  color: var(--ds-muted);
+  border-bottom: 2px solid var(--ds-accent);
+  color: var(--ds-accent);
   font-size: var(--ds-text-xs);
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: var(--ds-tracking-kicker);
   text-align: left;
   text-transform: uppercase;
@@ -252,6 +310,12 @@ body,
   padding: var(--ds-space-3);
   border-bottom: var(--ds-border) solid var(--ds-rule);
   vertical-align: top;
+}
+
+/* Zebra fraquíssima: só o suficiente para o olho não pular de linha numa
+   tabela de comparação com muitas colunas. */
+.slidev-layout tbody tr:nth-child(even) {
+  background: var(--ds-ink-wash);
 }
 
 .slidev-layout tr:last-child td {
@@ -283,9 +347,13 @@ body,
 }
 
 /* O mermaid desenha no tamanho natural do grafo e estoura o slide sem isto. O `!important`
-   é porque ele grava width/height como atributo no próprio <svg>. */
+   é porque ele grava width/height como atributo no próprio <svg>.
+
+   O teto é em `rem`, e não em `vh`, de propósito: o quadro do slide tem 552px fixos,
+   enquanto `vh` mede a janela do navegador — e na exportação em PDF a janela tem a
+   altura de TODOS os slides somados. Ver o comentário em aulas/layouts/figura.vue. */
 .slidev-layout .slidev-mermaid svg {
   max-width: 100% !important;
-  max-height: 58vh;
+  max-height: 20rem;
   height: auto !important;
 }

@@ -9,7 +9,7 @@
    ajustes pontuais; use estas para o que tem significado editorial.
    ========================================================================== */
 
-/* Rótulo acima de um título: "Aula 02", "Parte 1", o nome do módulo. */
+/* Rótulo acima de um título: "Aula 02", "Unidade 1", o nome do módulo. */
 .ds-kicker {
   margin: 0 0 var(--ds-space-2);
   color: var(--ds-accent);
@@ -31,16 +31,49 @@
   color: var(--ds-muted);
 }
 
-/* Destaque inline. Serve principalmente para os campos de frontmatter que
-   aceitam HTML: `title: A pergunta <span class="ds-em">certa</span>`. */
+/* Destaque inline no índigo: o conceito, o termo que a aula está construindo.
+   Serve principalmente para os campos de frontmatter que aceitam HTML:
+   `title: A memória é um processo <span class="ds-em">reconstrutivo</span>` */
 .ds-em {
   color: var(--ds-accent);
   font-weight: 650;
 }
 
+/* Destaque inline na terracota: a evidência — o achado, o número, o nome do
+   experimento. A dupla índigo/terracota é o que dá o ritmo visual do curso. */
 .ds-em-2 {
   color: var(--ds-accent-2);
   font-weight: 650;
+}
+
+/* Marca-texto como classe, para os campos de frontmatter (onde `<mark>` também
+   funciona, mas a classe deixa a intenção explícita). Mesma caneta amarela do
+   `<mark>` — ver base.css. */
+.ds-marca {
+  padding: 0 0.15em;
+  border-radius: 2px;
+  background: linear-gradient(
+    to top,
+    var(--ds-mark) 0%,
+    var(--ds-mark) 62%,
+    transparent 62%
+  );
+  font-weight: 600;
+}
+
+/* Etiqueta arredondada para classificar uma coisa no meio do texto:
+   "<span class="ds-etiqueta">clássico</span>", "<span class="ds-etiqueta">2024</span>". */
+.ds-etiqueta {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border-radius: 999px;
+  background: var(--ds-accent-wash);
+  color: var(--ds-accent);
+  font-size: var(--ds-text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: 0.1em;
 }
 
 /* Texto pequeno de rodapé: fonte, crédito, observação. */
@@ -72,4 +105,15 @@
   margin: var(--ds-space-4) 0;
   border-radius: 3px;
   background: var(--ds-accent);
+}
+
+/* Aperta o ritmo vertical de um trecho que ficou comprido. É válvula de escape,
+   não solução: se o slide inteiro precisa dela, ele é dois slides. */
+.ds-compacto :is(p, ul, ol, .ds-nota, .ds-termo, .ds-grade) {
+  margin-top: var(--ds-space-2);
+  margin-bottom: var(--ds-space-2);
+}
+
+.ds-compacto :is(li, p) {
+  line-height: var(--ds-leading-normal);
 }

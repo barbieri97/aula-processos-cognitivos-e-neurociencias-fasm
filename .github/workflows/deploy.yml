@@ -30,7 +30,28 @@ jobs:
           node-version: 24
           cache: npm
 
+      # O Chromium do Playwright pesa ~150 MB e não muda entre execuções: guardá-lo em
+      # cache economiza o download em todo push. A chave é o package-lock porque é ele
+      # que fixa a versão do playwright-chromium — versão nova, cache novo.
+      - name: Cache do navegador do Playwright
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
       - run: npm ci
+
+      # `download: true` no headmatter faz o `slidev build` exportar também o PDF da aula,
+      # e quem imprime esse PDF é o Chromium do Playwright. O binário do navegador já vem
+      # no `npm ci` (o pacote playwright-chromium o baixa no próprio install); o que falta
+      # no runner são as bibliotecas de sistema que ele carrega em tempo de execução.
+      #
+      # Sem este passo o build não quebra em silêncio: ele falha no primeiro `slidev build`,
+      # com erro de biblioteca compartilhada ausente vindo do Chromium.
+      #
+      # Chamado por caminho, e não por `npx`, pela mesma razão dos scripts de scripts/.
+      - name: Bibliotecas de sistema do Chromium
+        run: node node_modules/playwright-chromium/cli.js install-deps chromium
 
       # Descobre a URL pública do site. O output `base_path` é o caminho dela:
       # "/<nome-do-repo>" num repo comum, "/" num repo <usuario>.github.io.
@@ -47,6 +68,21 @@ jobs:
 
       - name: Conferir o dist/
         run: test -f dist/index.html || { echo "dist/index.html não existe — build falhou?"; exit 1; }
+
+      # Cada aula com `download: true` tem de ter saído com o seu PDF ao lado. Se o
+      # Playwright falhar, o `slidev build` já aborta antes daqui — esta conferência pega
+      # o caso mais chato: o build passa, mas o botão de download aponta para um 404.
+      - name: Conferir os PDFs
+        run: |
+          faltando=0
+          for deck in dist/*/; do
+            [ -f "$deck/index.html" ] || continue
+            if ! [ -f "$deck/slidev-exported.pdf" ]; then
+              echo "sem PDF: $deck (a aula tem \`download: true\` no headmatter?)"
+              faltando=1
+            fi
+          done
+          exit $faltando
 
       - name: Empacotar o dist/
         uses: actions/upload-pages-artifact@v5

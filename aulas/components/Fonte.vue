@@ -15,8 +15,8 @@
 <style scoped>
 .ds-fonte {
   position: absolute;
-  left: 3.2rem;
-  right: 3.2rem;
+  left: var(--ds-pad-x);
+  right: var(--ds-pad-x);
   bottom: 1.4rem;
   margin: 0;
   max-width: none;

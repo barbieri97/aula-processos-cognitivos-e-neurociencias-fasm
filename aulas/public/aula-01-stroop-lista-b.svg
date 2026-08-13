@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-label="Lista B — Stroop incongruente">
+  <title>Lista B — Stroop incongruente</title>
+  <desc>Os mesmos vinte nomes de cor impressos em tinta de outra cor: a palavra e a tinta divergem.</desc>
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="34" font-weight="700"
+     text-anchor="middle" letter-spacing="0.5">
+  <text x="112.5" y="78" fill="#4b3ba6">VERDE</text>
+  <text x="337.5" y="78" fill="#2c6e49">AZUL</text>
+  <text x="562.5" y="78" fill="#1746a2">VERMELHO</text>
+  <text x="787.5" y="78" fill="#b02a1f">ROXO</text>
+  <text x="112.5" y="158" fill="#b02a1f">ROXO</text>
+  <text x="337.5" y="158" fill="#1746a2">VERMELHO</text>
+  <text x="562.5" y="158" fill="#4b3ba6">VERDE</text>
+  <text x="787.5" y="158" fill="#2c6e49">AZUL</text>
+  <text x="112.5" y="238" fill="#2c6e49">AZUL</text>
+  <text x="337.5" y="238" fill="#4b3ba6">VERDE</text>
+  <text x="562.5" y="238" fill="#b02a1f">ROXO</text>
+  <text x="787.5" y="238" fill="#1746a2">VERMELHO</text>
+  <text x="112.5" y="318" fill="#1746a2">VERMELHO</text>
+  <text x="337.5" y="318" fill="#b02a1f">ROXO</text>
+  <text x="562.5" y="318" fill="#2c6e49">AZUL</text>
+  <text x="787.5" y="318" fill="#4b3ba6">VERDE</text>
+  <text x="112.5" y="398" fill="#4b3ba6">VERDE</text>
+  <text x="337.5" y="398" fill="#2c6e49">AZUL</text>
+  <text x="562.5" y="398" fill="#1746a2">VERMELHO</text>
+  <text x="787.5" y="398" fill="#b02a1f">ROXO</text>
+  </g>
+</svg>

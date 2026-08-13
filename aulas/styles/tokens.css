@@ -1,9 +1,19 @@
 /* ============================================================================
-   TOKENS — o vocabulário visual do design system.
+   TOKENS — o vocabulário visual de Processos Cognitivos e Neurociências.
 
    Toda cor, tamanho e espaçamento do repositório sai daqui. Layouts e
    componentes só consomem `var(--ds-*)`; nenhum deles escreve um hex na mão.
    Trocar a identidade visual das aulas = editar este arquivo, e só ele.
+
+   A IDENTIDADE, EM UMA FRASE: papel quente, índigo e terracota. O fundo não é
+   branco puro porque projetor branco cansa a vista em duas horas de aula; o
+   índigo é a cor do que é conceito, e a terracota a do que é evidência
+   empírica (experimento, dado, achado). Turma de 1º semestre: contraste alto,
+   tipo grande, pouca decoração.
+
+   CONTRASTE — todos os pares texto/fundo abaixo passam de 4.5:1 (WCAG AA) nos
+   dois temas. Se você trocar um hex, recalcule antes: sala de aula tem luz
+   acesa e projetor lavado.
 
    O tema claro mora em `:root`. O escuro só redefine as cores, dentro de
    `.dark` — a classe que o Slidev põe no <html> quando o deck está em modo
@@ -13,54 +23,76 @@
 
 :root {
   /* --- cor ---------------------------------------------------------------
-     bg       fundo do slide
+     bg       fundo do slide — papel quente, não branco
      surface  cartões, blocos, código — sempre sobre o bg
      ink      texto principal
      muted    texto secundário, legendas, rótulos
      rule     linhas, bordas, separadores
-     accent   a cor da disciplina: títulos de seção, destaques, links
-     accent-2 acento secundário, para o que precisa contrastar com o accent
-     ok / warn / danger  os três estados dos avisos (<Nota>) */
-  --ds-bg: #f8f7f4;
+     accent   índigo: o conceito, o vocabulário, a estrutura da aula
+     accent-2 terracota: a evidência — experimento, dado, achado empírico
+     ok / warn / danger  os três estados dos avisos (<Nota>) e do <MitoFato> */
+  --ds-bg: #faf9f6;
   --ds-surface: #ffffff;
-  --ds-ink: #17202a;
-  --ds-muted: #5c6b74;
-  --ds-rule: #e2e0da;
-  --ds-accent: #0d7d7a;
-  --ds-accent-2: #b45f06;
-  --ds-ok: #2f7d32;
-  --ds-warn: #b45f06;
-  --ds-danger: #b3261e;
+  --ds-ink: #1e1c2b;
+  --ds-muted: #605d75;
+  --ds-rule: #e6e2dc;
+  --ds-accent: #4b3ba6;
+  --ds-accent-2: #a84a1a;
+  --ds-ok: #2c6e49;
+  --ds-warn: #9a5b00;
+  --ds-danger: #b02a1f;
 
   /* Versões translúcidas, para fundos de destaque que funcionam nos dois temas.
      São derivadas na mão porque CSS não interpola hex sem color-mix em todo
      navegador que o Slidev exporta em PDF. */
-  --ds-accent-wash: rgba(13, 125, 122, 0.09);
-  --ds-accent-2-wash: rgba(180, 95, 6, 0.10);
-  --ds-ink-wash: rgba(23, 32, 42, 0.05);
+  --ds-accent-wash: rgba(75, 59, 166, 0.08);
+  --ds-accent-2-wash: rgba(168, 74, 26, 0.09);
+  --ds-ink-wash: rgba(30, 28, 43, 0.05);
+  --ds-ok-wash: rgba(44, 110, 73, 0.09);
+  --ds-warn-wash: rgba(154, 91, 0, 0.10);
+  --ds-danger-wash: rgba(176, 42, 31, 0.08);
+
+  /* Marca-texto: o traço de caneta amarela sobre a palavra que a turma anota.
+     É o único amarelo do sistema e existe só para isso — ver `<mark>` em
+     base.css e `.ds-marca` em utilities.css. */
+  --ds-mark: rgba(247, 203, 87, 0.55);
 
   /* --- tipografia --------------------------------------------------------
      A escala é fechada de propósito: 7 tamanhos. Se um slide "precisa" de um
-     tamanho que não está aqui, o problema costuma ser conteúdo demais. */
+     tamanho que não está aqui, o problema costuma ser conteúdo demais.
+
+     Os tamanhos são maiores que os de um deck de conferência: o piso do corpo
+     de texto é ~1.05rem porque quem está no fundo da sala também lê. Slide com
+     letra pequena é slide com conteúdo que devia estar no material de leitura.
+
+     Para carregar as fontes de verdade (elas só estão nomeadas aqui), ponha no
+     headmatter da aula:
+       fonts:
+         sans: Inter
+         serif: Source Serif 4
+         mono: JetBrains Mono
+     Sem esse campo, entram as fontes do sistema — e o deck não depende de rede. */
   --ds-font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --ds-font-serif: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --ds-font-serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --ds-font-mono: "JetBrains Mono", "Cascadia Code", "Fira Code", ui-monospace, monospace;
 
-  --ds-text-xs: 0.72rem;
-  --ds-text-sm: 0.85rem;
-  --ds-text-base: 1rem;
-  --ds-text-lg: 1.25rem;
-  --ds-text-xl: 1.65rem;
-  --ds-text-2xl: 2.2rem;
-  --ds-text-3xl: 3.2rem;
+  --ds-text-xs: 0.76rem;
+  --ds-text-sm: 0.9rem;
+  --ds-text-base: 1.05rem;
+  --ds-text-lg: 1.3rem;
+  --ds-text-xl: 1.7rem;
+  --ds-text-2xl: 2.3rem;
+  --ds-text-3xl: 3.25rem;
 
   --ds-leading-tight: 1.15;
   --ds-leading-normal: 1.5;
   --ds-leading-loose: 1.7;
-  --ds-tracking-kicker: 0.16em;
+  --ds-tracking-kicker: 0.14em;
 
   /* --- espaço ------------------------------------------------------------
-     Escala de 4px. `--ds-pad-slide` é a margem interna padrão de um slide. */
+     Escala de 4px. `--ds-pad-slide` é a margem interna padrão de um slide.
+     `--ds-pad-x` é só o lado, para quem precisa alinhar algo absoluto com a
+     margem (o rodapé da <Fonte>, o meta da capa). */
   --ds-space-1: 0.25rem;
   --ds-space-2: 0.5rem;
   --ds-space-3: 0.75rem;
@@ -69,32 +101,40 @@
   --ds-space-6: 2rem;
   --ds-space-7: 3rem;
   --ds-space-8: 4rem;
-  --ds-pad-slide: 2.6rem 3.2rem;
+  --ds-pad-x: 3.2rem;
+  --ds-pad-slide: 2.6rem var(--ds-pad-x);
 
   /* --- forma -------------------------------------------------------------- */
-  --ds-radius-sm: 4px;
-  --ds-radius: 10px;
-  --ds-radius-lg: 18px;
+  --ds-radius-sm: 5px;
+  --ds-radius: 12px;
+  --ds-radius-lg: 20px;
   --ds-border: 1px;
   --ds-border-thick: 3px;
-  --ds-shadow: 0 10px 30px -18px rgba(23, 32, 42, 0.55);
+  --ds-shadow: 0 12px 32px -20px rgba(30, 28, 43, 0.45);
 }
 
 .dark {
-  --ds-bg: #12161b;
-  --ds-surface: #1a2027;
-  --ds-ink: #e9eef3;
-  --ds-muted: #93a1ae;
-  --ds-rule: #2a323b;
-  --ds-accent: #4cc2b8;
-  --ds-accent-2: #e8a05c;
-  --ds-ok: #6cc070;
-  --ds-warn: #e8a05c;
-  --ds-danger: #f0857c;
+  --ds-bg: #14131c;
+  --ds-surface: #1d1c28;
+  --ds-ink: #eceaf4;
+  --ds-muted: #9d99b3;
+  --ds-rule: #2e2c3d;
+  --ds-accent: #a99bf5;
+  --ds-accent-2: #f0a173;
+  --ds-ok: #6fc48f;
+  --ds-warn: #e6b168;
+  --ds-danger: #f18b80;
 
-  --ds-accent-wash: rgba(76, 194, 184, 0.12);
-  --ds-accent-2-wash: rgba(232, 160, 92, 0.12);
-  --ds-ink-wash: rgba(233, 238, 243, 0.06);
+  --ds-accent-wash: rgba(169, 155, 245, 0.13);
+  --ds-accent-2-wash: rgba(240, 161, 115, 0.12);
+  --ds-ink-wash: rgba(236, 234, 244, 0.06);
+  --ds-ok-wash: rgba(111, 196, 143, 0.12);
+  --ds-warn-wash: rgba(230, 177, 104, 0.12);
+  --ds-danger-wash: rgba(241, 139, 128, 0.12);
 
-  --ds-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.8);
+  /* No escuro a caneta amarela viraria um borrão: o marca-texto vira um
+     grifo do próprio índigo, que continua legível sob o texto claro. */
+  --ds-mark: rgba(169, 155, 245, 0.28);
+
+  --ds-shadow: 0 12px 32px -20px rgba(0, 0, 0, 0.85);
 }

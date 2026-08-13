@@ -63,6 +63,29 @@ function layoutsComPropReservada () {
   return achados
 }
 
+/**
+ * Chaves de frontmatter que têm espaço no nome — o rastro de um `: ` ou de uma vírgula
+ * que caiu dentro de um texto sem aspas.
+ *
+ * `- Quatro abordagens: a força de uma cobre a outra` não vira o texto que se escreveu:
+ * o YAML lê o `: ` e devolve o mapa `{"Quatro abordagens": "a força de uma cobre a outra"}`.
+ * O layout recebe um objeto onde esperava string e imprime `[object Object]` no slide.
+ * A vírgula faz o mesmo estrago dentro de `{ tema: ..., desc: ... }`, e ali ela ainda
+ * engole os campos seguintes do frontmatter.
+ *
+ * Nada disso dá erro: o arquivo é YAML válido, só que descreve outra coisa. O sinal é o
+ * nome da chave — campo de frontmatter é identificador (`tema`, `desc`, `fonts`), e
+ * identificador não tem espaço. Frase com espaço virando chave é sempre acidente.
+ */
+function chavesComEspaco (valor, caminho = '') {
+  if (Array.isArray(valor)) return valor.flatMap((v, i) => chavesComEspaco(v, `${caminho}[${i}]`))
+  if (!valor || typeof valor !== 'object') return []
+  return Object.entries(valor).flatMap(([chave, v]) => [
+    ...(chave.includes(' ') ? [{ chave, caminho: caminho || '(raiz)' }] : []),
+    ...chavesComEspaco(v, caminho ? `${caminho}.${chave}` : chave),
+  ])
+}
+
 /** Todo texto de um frontmatter, achatado — é onde moram `imagem:`, `bg:`, `foto:` etc. */
 function valoresDeTexto (valor) {
   if (typeof valor === 'string') return [valor]
@@ -125,6 +148,11 @@ async function lintDeck (file) {
     // para uma imagem faz o slide desaparecer do deck, sem erro nenhum.
     if (typeof fm.src === 'string' && !fm.src.endsWith('.md')) {
       erro(`${onde}: \`src: ${fm.src}\` — \`src\` é reservado (importa outro .md) e faz o slide sumir. Use outro nome de campo, tipo \`imagem:\``, linha)
+    }
+
+    // `: ` ou `,` solto dentro de um texto sem aspas — ver chavesComEspaco().
+    for (const { chave, caminho } of chavesComEspaco(fm)) {
+      erro(`${onde}: em \`${caminho}\`, "${chave}" virou nome de campo — tem um \`: \` ou uma \`,\` num texto sem aspas. Ponha o texto entre aspas.`, linha)
     }
 
     // Componentes: aviso, não erro. Um <Tag> maiúsculo pode ser HTML de um addon ou de um

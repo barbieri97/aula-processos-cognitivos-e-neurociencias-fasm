@@ -1,13 +1,24 @@
 <!--
   <Termo> — a definição formal de uma palavra. O bloco que a turma copia.
 
-  <Termo palavra="Glúten" origem="do latim gluten, cola">
-  Rede de proteínas que segura o gás produzido pela fermentação.
+  <Termo palavra="Memória de trabalho" ingles="working memory" origem="Baddeley &amp; Hitch, 1974">
+
+  Sistema de capacidade limitada que mantém e manipula informação durante
+  poucos segundos, enquanto uma tarefa está em curso.
+
   </Termo>
+
+  `ingles` existe porque quase toda a bibliografia da área está em inglês: ver o
+  termo nas duas línguas desde o 1º semestre é o que permite procurar sozinho
+  depois. `origem` é a etimologia ou a autoria — o que ajudar a lembrar.
+
+  Um termo por slide. Se a aula define quatro palavras de uma vez, nenhuma
+  delas é copiada.
 -->
 <script setup lang="ts">
 defineProps<{
   palavra?: string
+  ingles?: string
   origem?: string
 }>()
 </script>
@@ -16,9 +27,10 @@ defineProps<{
   <dl class="ds-termo">
     <dt>
       {{ palavra }}
-      <span v-if="origem" class="origem">{{ origem }}</span>
+      <span v-if="ingles" class="ingles">{{ ingles }}</span>
     </dt>
     <dd><slot /></dd>
+    <dd v-if="origem" class="origem">{{ origem }}</dd>
   </dl>
 </template>
 
@@ -42,17 +54,29 @@ dt {
   line-height: var(--ds-leading-tight);
 }
 
-.origem {
-  color: var(--ds-muted);
-  font-family: var(--ds-font-serif);
-  font-size: var(--ds-text-base);
-  font-style: italic;
-  font-weight: 400;
+/* O termo em inglês vem em mono, e não em itálico: é uma etiqueta de busca,
+   não uma variação de ênfase. */
+.ingles {
+  padding: 0.1em 0.5em;
+  border-radius: var(--ds-radius-sm);
+  background: var(--ds-accent-wash);
+  color: var(--ds-accent);
+  font-family: var(--ds-font-mono);
+  font-size: var(--ds-text-sm);
+  font-weight: 500;
 }
 
 dd {
   margin: var(--ds-space-3) 0 0;
   line-height: var(--ds-leading-loose);
+}
+
+.origem {
+  margin-top: var(--ds-space-2);
+  color: var(--ds-muted);
+  font-family: var(--ds-font-serif);
+  font-size: var(--ds-text-sm);
+  font-style: italic;
 }
 
 dd :deep(> :first-child) {

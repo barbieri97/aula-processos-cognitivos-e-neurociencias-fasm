@@ -3,15 +3,21 @@
 
   ---
   layout: roteiro
-  title: O caminho de hoje
+  kicker: O caminho de hoje
+  title: Três perguntas
   itens:
-    - { tema: A massa, desc: farinha, água e tempo }
-    - { tema: O fermento, desc: quem faz o gás }
-    - { tema: O forno, desc: onde tudo trava }
+    - { tema: O que é atenção, desc: filtrar não é o mesmo que perceber }
+    - { tema: Onde ela falha, desc: cegueira por desatenção }
+    - { tema: Por que isso importa, desc: da direção ao consultório }
+  atual: 2
   ---
 
   Cada item aceita `tema` e `desc` (os dois com HTML). Um item pode ser só uma
   string, e aí vira o `tema` sem descrição. `atual: 2` marca onde a aula está.
+
+  Repetir este mesmo slide entre as seções, mudando só o `atual`, é o truque
+  pedagógico barato que mais funciona: a turma sabe sempre onde está e quanto
+  falta.
 -->
 <script setup lang="ts">
 // `title` chega pelo objeto `frontmatter`, não como prop — ver o comentário em capa.vue.
@@ -39,7 +45,7 @@ const itensNormalizados = (props.itens ?? []).map(item =>
       <li
         v-for="(item, i) in itensNormalizados"
         :key="i"
-        :class="{ atual: atual === i + 1 }"
+        :class="{ atual: atual === i + 1, feito: atual !== undefined && atual > i + 1 }"
       >
         <span class="num">{{ String(i + 1).padStart(2, '0') }}</span>
         <span class="texto">
@@ -64,26 +70,47 @@ const itensNormalizados = (props.itens ?? []).map(item =>
 
 .lista li {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: var(--ds-space-4);
   margin: 0;
   padding: var(--ds-space-3) var(--ds-space-4);
-  border-left: var(--ds-border-thick) solid transparent;
-  border-radius: var(--ds-radius-sm);
+  border-radius: var(--ds-radius);
 }
 
-/* O item da vez ganha a barra e o fundo; os outros ficam de fora, não apagados
-   — o roteiro é para se localizar, não para esconder o resto. */
+/* O item da vez ganha fundo e disco cheio; os já vistos ficam esmaecidos, mas
+   continuam legíveis — o roteiro é para se localizar, não para esconder. */
 .lista li.atual {
-  border-left-color: var(--ds-accent);
   background: var(--ds-accent-wash);
 }
 
+.lista li.feito {
+  opacity: 0.55;
+}
+
+/* O número mora num disco: é o mesmo desenho do número da `secao`, em miniatura. */
 .num {
-  color: var(--ds-accent);
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 2px solid var(--ds-rule);
+  border-radius: 50%;
+  color: var(--ds-muted);
   font-size: var(--ds-text-sm);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
+}
+
+.lista li.atual .num {
+  border-color: var(--ds-accent);
+  background: var(--ds-accent);
+  color: var(--ds-bg);
+}
+
+.lista li.feito .num {
+  border-color: var(--ds-accent);
+  color: var(--ds-accent);
 }
 
 .texto {
@@ -91,6 +118,7 @@ const itensNormalizados = (props.itens ?? []).map(item =>
   align-items: baseline;
   gap: var(--ds-space-3);
   flex-wrap: wrap;
+  min-width: 0;
 }
 
 .tema {
