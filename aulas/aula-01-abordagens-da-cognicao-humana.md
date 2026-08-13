@@ -22,12 +22,17 @@ cap. 1 (p. 1–33).
 Relógio sugerido:
   abertura ...................  5 min  (slides 1–3)
   parte 1 — o que é cognição .  8 min  (slides 4–7)
-  parte 2 — cima e baixo ..... 17 min  (slides 8–16, dos quais 10 são a atividade)
-  parte 3 — as 4 abordagens .. 22 min  (slides 17–28)
-  parte 4 — juntando .........  8 min  (slides 29–32)
+  parte 2 — cima e baixo ..... 16 min  (slides 8–13, dos quais 10 são a atividade)
+  parte 3 — as 4 abordagens .. 25 min  (slides 14–28)
+  parte 4 — juntando .........  6 min  (slides 29–33)
 
-Se o relógio apertar, os dois slides cortáveis sem prejuízo estão marcados nas
-notas: o dos lobos cerebrais (anatomia volta na aula 03) e o da rede conexionista.
+A parte 3 tem uma forma fixa, quatro vezes: um slide de definição — título
+numerado mais o <Termo> — e só depois o caso, a figura ou o balanço. Os quatro
+<Termo> (slides 16, 18, 21 e 27) são o que a turma copia; se o relógio apertar,
+corte um slide de exemplo, nunca um deles.
+
+Os dois cortáveis sem prejuízo estão marcados nas notas: o dos lobos cerebrais
+(anatomia volta na aula 03) e o da rede conexionista.
 -->
 
 ---
@@ -214,14 +219,7 @@ O sinal acústico é péssimo; o que completa a palavra é o conhecimento.
 
 ---
 layout: atividade
-title: Dizer a cor da tinta
-tempo: 10 min
-formato: em duplas
-passos:
-  - Um lê a <strong>lista A</strong> em voz alta dizendo a <strong>cor da tinta</strong> de cada palavra — não a palavra; o outro cronometra
-  - Trocar de papel e repetir com a <strong>lista B</strong>
-  - Anotar os dois tempos e quantos tropeços cada um deu
-entrega: Os dois tempos e a diferença entre eles, em segundos
+title: Stroop
 ---
 
 Ler é o que vocês fazem automaticamente há uns quinze anos. A tarefa pede o
@@ -232,47 +230,6 @@ contrário — e é aí que dá para medir quanto custa.
 quatro duplas em voz alta e anote as diferenças no quadro: costuma dar de 3 a
 10 segundos numa lista de 20 palavras. Se a diferença de alguma dupla for zero,
 quase sempre a instrução foi lida errado — vale conferir na hora.
--->
-
----
-layout: default
----
-
-# Lista A
-
-![Vinte nomes de cor impressos na própria cor](/aula-01-stroop-lista-a.svg)
-
----
-layout: default
----
-
-# Lista B
-
-![Os mesmos vinte nomes de cor, impressos em tinta de outra cor](/aula-01-stroop-lista-b.svg)
-
----
-layout: default
----
-
-# O que vocês acabaram de medir
-
-<Experimento
-  nome="Efeito Stroop"
-  autoria="Stroop, 1935"
-  pergunta="Ler a palavra atrapalha nomear a cor em que ela está impressa?"
-  metodo="Nomear a cor da tinta de palavras que são nomes de outras cores"
-  achado="A resposta demora mais, e sai errada mais vezes, quando palavra e cor divergem">
-
-A leitura não se desliga por ordem. Ela corre **junto** com a tarefa pedida e
-compete com ela — é essa competição que aparece no cronômetro.
-
-</Experimento>
-
-<Fonte>Stroop, J. R. (1935). Studies of interference in serial verbal reactions. <em>Journal of Experimental Psychology</em>, 18(6), 643–662 — quase noventa anos depois, a tarefa continua entrando em estudos de atenção, de desenvolvimento e de neuroimagem.</Fonte>
-
-<!--
-Se alguém perguntar por que a lista A também custa algum tempo: porque nomear
-cor é mais lento que ler, sempre. O que interessa é a DIFERENÇA entre as duas.
 -->
 
 ---
@@ -346,25 +303,25 @@ layout: default
 <Grade :cols="2">
 <Cartao rotulo="1" titulo="Psicologia cognitiva experimental">
 
-Mede o **comportamento** de pessoas saudáveis em tarefas controladas: quanto
-tempo levou, quantos erros.
+Experimento com pessoas **saudáveis**: muda-se uma variável da tarefa e mede-se
+o efeito no tempo de resposta e no erro.
 
 </Cartao>
 <Cartao rotulo="2" titulo="Neuropsicologia cognitiva">
 
-Estuda pessoas com **lesão cerebral** para entender como o sistema funciona
-quando está inteiro.
+Estudo de pessoas com **lesão cerebral**: o que a lesão derruba e o que preserva
+diz como a mente sem lesão está dividida.
 
 </Cartao>
 <Cartao rotulo="3" titulo="Neurociência cognitiva">
 
-Combina comportamento com o registro da **atividade do cérebro** durante a
-tarefa.
+Comportamento **mais** registro do cérebro em funcionamento: onde e quando cada
+processo acontece.
 
 </Cartao>
 <Cartao rotulo="4" titulo="Ciência cognitiva computacional">
 
-Escreve a teoria como **programa**: se ele roda e reproduz o que as pessoas
+A teoria escrita como **programa**: se ele roda e reproduz o que as pessoas
 fazem, a teoria estava completa.
 
 </Cartao>
@@ -372,13 +329,38 @@ fazem, a teoria estava completa.
 
 <Fonte>Cada vez mais um mesmo estudo usa duas ou três delas juntas — a divisão é de exposição, não de território.</Fonte>
 
+<!--
+Este slide é o mapa: quatro frases, uma por abordagem. Os quatro slides
+seguintes abrem cada um com a definição formal — avise que é ali que se copia.
+-->
+
 ---
 layout: default
 ---
 
 # 1. Psicologia cognitiva experimental
 
-É a mais antiga das quatro, e dela vêm as tarefas que as outras três usam.
+<Termo palavra="Psicologia cognitiva experimental" ingles="experimental cognitive psychology" origem="a mais antiga das quatro — dela vêm as tarefas que as outras três usam">
+
+Estudo dos processos cognitivos por **experimento comportamental com pessoas
+saudáveis**: muda-se uma variável da tarefa, mantém-se o resto igual e mede-se o
+efeito no tempo de resposta e no número de erros.
+
+</Termo>
+
+É exatamente o que vocês acabaram de fazer: a variável manipulada era a lista, e
+o que se mediu foi o cronômetro.
+
+<!--
+Fecha a parte 2 dentro da parte 3 — vale dizer com todas as letras que a turma
+já rodou um experimento desta abordagem.
+-->
+
+---
+layout: default
+---
+
+# O que ela ganha e o que ela perde
 
 <ForcasLimites
   :forcas="[
@@ -405,6 +387,28 @@ layout: default
 
 # 2. Neuropsicologia cognitiva
 
+<Termo palavra="Neuropsicologia cognitiva" ingles="cognitive neuropsychology" origem="Shallice &amp; Warrington, 1970, e a tradição que veio depois">
+
+Estudo do desempenho de pessoas com **lesão cerebral**, usado para inferir como
+a cognição está organizada em quem não tem lesão. O dado é sempre um par: o que
+a lesão derrubou e o que ela deixou intacto.
+
+</Termo>
+
+Ela não estuda a lesão por interesse na lesão. A lesão é o **instrumento** — é
+ela que separa o que, na mente saudável, sempre aparece junto.
+
+<!--
+Esta é a inversão que a turma estranha: olhar o cérebro quebrado para dizer como
+funciona o inteiro. O caso do próximo slide faz exatamente isso.
+-->
+
+---
+layout: default
+---
+
+# Dois pacientes, padrões inversos
+
 <Caso titulo="K.F. e H.M." contexto="1953–1970" pergunta="Se a lesão de um derruba o que a do outro preserva, o que isso diz sobre a mente sem lesão?">
 
 K.F. tinha a memória de curto prazo gravemente prejudicada e a de longo prazo
@@ -418,8 +422,9 @@ prazo depois de passar pela de curto. Os dois casos tornaram essa ordem
 insustentável.
 
 <!--
-Ordem importa: o caso ANTES do conceito. A pergunta do rodapé é literalmente o
-que o próximo slide responde.
+A definição do slide anterior fica abstrata até aqui: é este par que mostra o
+que "o que a lesão derrubou e o que ela deixou intacto" quer dizer. A pergunta
+do rodapé é literalmente o que o próximo slide responde.
 -->
 
 ---
@@ -447,6 +452,30 @@ justamente para conseguir avaliar a variação entre eles.
 -->
 
 ---
+layout: default
+---
+
+# 3. Neurociência cognitiva
+
+<Termo palavra="Neurociência cognitiva" ingles="cognitive neuroscience" origem="o nome é dos anos 1970; as técnicas de imagem que a popularizaram, dos anos 1990">
+
+Estudo da cognição que mede, **ao mesmo tempo**, o comportamento e a atividade
+do cérebro de quem executa a tarefa — para dizer *onde* e *quando* cada processo
+acontece.
+
+</Termo>
+
+É a mais nova das quatro e a que mais aparece na imprensa. Por isso os slides
+seguintes são, em boa parte, sobre o que ela <span class="ds-em">não</span>
+autoriza concluir.
+
+<!--
+Repare no "ao mesmo tempo" da definição: neuroimagem sem tarefa comportamental
+não é neurociência cognitiva, é anatomia. O que a área quer é a correspondência
+entre os dois registros.
+-->
+
+---
 layout: figura
 imagem: /aula-01-lobos.png
 rotulo: Fig. 1.3
@@ -455,11 +484,11 @@ lado: direita
 ajuste: contain
 ---
 
-# 3. Neurociência cognitiva
+# O vocabulário mínimo
 
 Cem bilhões de neurônios, conectados de formas que ainda estamos mapeando.
-Antes de discutir o que as técnicas mostram, o vocabulário mínimo: o córtex se
-divide em quatro lobos, e é por eles que os achados são localizados.
+Antes de discutir o que as técnicas mostram: o córtex se divide em quatro
+lobos, e é por eles que os achados são localizados.
 
 Voltamos à anatomia com calma na aula 03. Por ora basta saber que "ativação no
 lobo occipital" quer dizer **onde**, e que dizer onde não é o mesmo que
@@ -582,6 +611,29 @@ ideia de que o reconhecimento de rostos morava só na área fusiforme da face.
 -->
 
 ---
+layout: default
+---
+
+# 4. Ciência cognitiva computacional
+
+<Termo palavra="Ciência cognitiva computacional" ingles="computational cognitive science" origem="Newell &amp; Simon, 1972; McClelland &amp; Rumelhart, 1986">
+
+Construção de **modelos computacionais** que simulam o processamento humano. A
+teoria é testada rodando o programa e comparando o que ele produz com o que as
+pessoas produzem — os mesmos acertos e, principalmente, os mesmos erros.
+
+</Termo>
+
+Escrever a teoria como programa obriga a ser explícito: teoria em palavras
+admite margem de manobra; um programa, não — ou ele roda, ou falta alguma peça
+que o texto escondia.
+
+<!--
+"Os mesmos erros" é o critério que separa esta abordagem da IA, e é a ponte para
+o rodapé do próximo slide.
+-->
+
+---
 layout: figura
 imagem: /aula-01-rede-conexionista.png
 rotulo: Fig. 1.9
@@ -590,16 +642,13 @@ lado: direita
 ajuste: contain
 ---
 
-# 4. Ciência cognitiva computacional
+# Duas famílias de modelo
 
-Escrever a teoria como programa obriga a ser explícito. Teoria em palavras
-admite margem de manobra; um programa, não — ou ele roda, ou falta alguma peça
-que o texto escondia.
+As **redes conexionistas**, ao lado, aprendem ajustando o peso das conexões
+entre unidades simples: ninguém escreve as regras, elas saem do treino.
 
-Duas famílias de modelo aparecem no capítulo: as **redes** ao lado, que
-aprendem ajustando o peso das conexões, e os **sistemas de produção**, feitos
-de regras "se…, então…" — do tipo *se o sinal de pedestre está verde, então
-atravesse*.
+Os **sistemas de produção** são o oposto — regras "se…, então…" escritas à mão,
+do tipo *se o sinal de pedestre está verde, então atravesse*.
 
 <Fonte>Não confundir com inteligência artificial: o Deep Blue venceu Kasparov em 1997 avaliando 200 milhões de posições por segundo. Ninguém joga xadrez assim. Modelar é imitar o processo humano; a IA só precisa do resultado.</Fonte>
 
@@ -637,29 +686,6 @@ que a pergunta ainda não está bem formulada. Perguntar qual abordagem é a
 melhor é como perguntar, no golfe, se o taco de tacada longa é melhor que o de
 tacada curta.
 
----
-layout: default
----
-
-# O quadro que vale guardar
-
-| abordagem | evidência que produz | ponto cego |
-|---|---|---|
-| Psicologia cognitiva experimental | tempo e erro em tarefa controlada | evidência indireta; distância da vida diária |
-| Neuropsicologia cognitiva | o que a lesão derruba e o que preserva | poucos casos; o paciente compensa |
-| Neurociência cognitiva | onde e quando o cérebro se ativa | correlação; falso-positivo; inferência reversa |
-| Ciência cognitiva computacional | uma teoria que roda e prevê | difícil de refutar; ignora emoção e motivação |
-
-<Referencia
-  autores="Eysenck, M. W., &amp; Keane, M. T."
-  ano="2017"
-  titulo="Manual de psicologia cognitiva"
-  onde="Artmed, 7ª ed."
-  capitulo="cap. 1, p. 1–33 — o quadro é uma adaptação da Tab. 1.1, p. 30" />
-
-<!--
-Este quadro é o que cai na primeira avaliação. Diga isso.
--->
 
 ---
 layout: default
@@ -692,3 +718,27 @@ pontos:
 proximo: Aula 02 — Percepção visual e reconhecimento de objetos
 leitura: Eysenck &amp; Keane, cap. 1 (p. 1–33) — a Tab. 1.1 com atenção
 ---
+---
+layout: default
+---
+
+# O quadro que vale guardar
+
+| abordagem | evidência que produz | ponto cego |
+|---|---|---|
+| Psicologia cognitiva experimental | tempo e erro em tarefa controlada | evidência indireta; distância da vida diária |
+| Neuropsicologia cognitiva | o que a lesão derruba e o que preserva | poucos casos; o paciente compensa |
+| Neurociência cognitiva | onde e quando o cérebro se ativa | correlação; falso-positivo; inferência reversa |
+| Ciência cognitiva computacional | uma teoria que roda e prevê | difícil de refutar; ignora emoção e motivação |
+
+<Referencia
+  autores="Eysenck, M. W., &amp; Keane, M. T."
+  ano="2017"
+  titulo="Manual de psicologia cognitiva"
+  onde="Artmed, 7ª ed."
+  capitulo="cap. 1, p. 1–33 — o quadro é uma adaptação da Tab. 1.1, p. 30" />
+
+<!--
+Este quadro é o que cai na primeira avaliação. Diga isso.
+-->
+
