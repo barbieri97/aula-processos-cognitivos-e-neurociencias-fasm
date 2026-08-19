@@ -1,7 +1,8 @@
 ---
 theme: none
 title: Abordagens da cognição humana
-info: As quatro maneiras de estudar a cognição — e o tipo de evidência que cada uma produz
+info: As quatro maneiras de estudar a cognição — e o tipo de evidência que cada
+  uma produz
 date: "2026-08-13"
 colorSchema: light
 download: true
@@ -11,29 +12,11 @@ fonts:
   mono: JetBrains Mono
 layout: capa
 kicker: Unidade 1 · Aula 01
-subtitle: Quatro maneiras de estudar o que acontece <span class="ds-em">entre o estímulo e a resposta</span>.
+subtitle: Quatro maneiras de estudar o que acontece <span class="ds-em">entre o
+  estímulo e a resposta</span>.
 meta: Processos Cognitivos e Neurociências · Psicologia · 1º semestre
 ---
 
-<!--
-Aula de 60 minutos. Base: EYSENCK & KEANE, Manual de psicologia cognitiva, 7ª ed.,
-cap. 1 (p. 1–33).
-
-Relógio sugerido:
-  abertura ...................  5 min  (slides 1–3)
-  parte 1 — o que é cognição .  8 min  (slides 4–7)
-  parte 2 — cima e baixo ..... 16 min  (slides 8–13, dos quais 10 são a atividade)
-  parte 3 — as 4 abordagens .. 25 min  (slides 14–28)
-  parte 4 — juntando .........  6 min  (slides 29–33)
-
-A parte 3 tem uma forma fixa, quatro vezes: um slide de definição — título
-numerado mais o <Termo> — e só depois o caso, a figura ou o balanço. Os quatro
-<Termo> (slides 16, 18, 21 e 27) são o que a turma copia; se o relógio apertar,
-corte um slide de exemplo, nunca um deles.
-
-Os dois cortáveis sem prejuízo estão marcados nas notas: o dos lobos cerebrais
-(anatomia volta na aula 03) e o da rede conexionista.
--->
 
 ---
 layout: default
@@ -42,46 +25,47 @@ layout: default
 # Para onde vamos
 
 <Objetivos :itens="[
-  'Explicar o que a psicologia cognitiva estuda e por que ela descreve a mente por analogia com o computador',
-  'Distinguir processamento de baixo para cima de processamento de cima para baixo',
-  'Nomear as quatro abordagens da cognição humana e o tipo de evidência que cada uma produz',
-  'Apontar o que uma afirmação baseada em imagem de cérebro não autoriza concluir',
+  'Explicar o que a psicologia cognitiva estuda',
+  'Distinguir processamento de baixo para cima (bottom-up) de processamento de cima para baixo (top-down)',
+  'Nomear as quatro abordagens da cognição humana e o tipo de evidência que cada uma produz'
 ]" />
-
-<!--
-Volte a este slide no fim da aula. O quarto objetivo é o que mais rende: a turma
-vai encontrar manchete de neurociência a semana inteira.
--->
 
 ---
 layout: roteiro
 kicker: O caminho de hoje
 title: Quatro paradas
 itens:
-  - { tema: O que fica entre o estímulo e a resposta, desc: "e por que ninguém consegue ver isso diretamente" }
-  - { tema: "De baixo para cima, de cima para baixo", desc: "as duas direções em que a informação corre" }
-  - { tema: Quatro abordagens, desc: "quatro tipos de evidência sobre a mesma mente" }
-  - { tema: Por que nenhuma basta sozinha, desc: "o que se ganha ao combinar duas" }
+  - {
+      tema: O que fica entre o estímulo e a resposta,
+      desc: "e por que ninguém consegue ver isso diretamente"
+    }
+  - {
+      tema: "De baixo para cima, de cima para baixo",
+      desc: "as duas direções em que a informação corre"
+    }
+  - {
+      tema: Quatro abordagens,
+      desc: "quatro tipos de evidência sobre a mesma mente"
+    }
+  - {
+      tema: Por que nenhuma basta sozinha,
+      desc: "o que se ganha ao combinar duas"
+    }
 ---
-
-<!--
-Aula de abertura da disciplina: vale gastar 1 minuto aqui dizendo que as quatro
-paradas correspondem à divisão do capítulo 1, que é a leitura desta semana.
--->
 
 ---
 layout: secao
 numero: "01"
 kicker: Parte 1
 title: O que fica entre o estímulo e a resposta
-note: A pergunta que organiza a disciplina inteira — e que ninguém responde olhando de fora.
+note: A pergunta que organiza a disciplina inteira.
 ---
 
 ---
 layout: default
 ---
 
-# Comece pelo caso, não pela definição
+# Caso 1
 
 <Caso titulo="A travessia" contexto="qualquer esquina, hoje de manhã" pergunta="Entre a luz que chegou ao seu olho e o pé que saiu da calçada, o que aconteceu?">
 
@@ -94,11 +78,6 @@ lado, alguém chama seu nome — e você se vira antes de decidir se virar.
 Nada disso foi difícil. Mas entre a luz e o passo houve seleção do que olhar,
 reconhecimento do que estava lá, comparação com o que você já sabe sobre
 carros, e uma decisão. <mark>Nenhuma dessas etapas é visível de fora.</mark>
-
-<!--
-Peça um exemplo da turma antes de avançar: "me deem outra situação banal em que
-várias coisas aconteceram sem vocês notarem". Costuma sair cozinhar, ou digitar.
--->
 
 ---
 layout: default
@@ -118,11 +97,6 @@ Repare no que a definição não diz: ela não promete observar esses processos.
 O que se observa é **comportamento** — o que a pessoa faz, quanto tempo levou,
 quantos erros cometeu. Os processos são <span class="ds-em">inferidos</span> a
 partir disso.
-
-<!--
-Este é o ponto que a turma leva a aula inteira para aceitar: em psicologia
-cognitiva a evidência é sempre indireta. Vale dizer com todas as letras.
--->
 
 ---
 layout: figura
@@ -144,12 +118,6 @@ sistema que **recebe** informação, **processa** por etapas e **produz** uma
 resposta.
 
 <Fonte>Figura reproduzida de Eysenck &amp; Keane, <em>Manual de psicologia cognitiva</em>, 7ª ed. (Artmed, 2017), p. 2. Uso didático.</Fonte>
-
-<!--
-Vale contar que a analogia é datada e ainda assim útil: ela deu à psicologia um
-jeito de falar de processos internos sem apelar para introspecção, que era o que
-o behaviorismo tinha proibido com boas razões.
--->
 
 ---
 layout: secao
@@ -182,11 +150,6 @@ a expectativa de encontrar uma frase conhecida venceu a página.
 
 <Fonte>Figura reproduzida de Eysenck &amp; Keane, <em>Manual de psicologia cognitiva</em>, 7ª ed. (Artmed, 2017), p. 3. Uso didático.</Fonte>
 
-<!--
-Deixe a turma ler antes de clicar. Alguns vão perceber o segundo "na" — pergunte
-a eles se perceberam de primeira ou na segunda passada. Quase sempre é na segunda.
--->
-
 ---
 layout: comparacao
 kicker: As duas direções
@@ -212,11 +175,6 @@ pergunta: Os dois funcionam juntos o tempo todo. A pergunta empírica não é qu
 - É ele que faz você ler o "na" uma vez só
 - Sem ele, toda leitura custaria o que custou a primeira
 
-<!--
-Exemplo extra se sobrar tempo: ouvir o nome de alguém numa festa barulhenta.
-O sinal acústico é péssimo; o que completa a palavra é o conhecimento.
--->
-
 ---
 layout: atividade
 title: Stroop
@@ -224,13 +182,6 @@ title: Stroop
 
 Ler é o que vocês fazem automaticamente há uns quinze anos. A tarefa pede o
 contrário — e é aí que dá para medir quanto custa.
-
-<!--
-2 min explicando, 6 min fazendo, 2 min recolhendo os números. Peça três ou
-quatro duplas em voz alta e anote as diferenças no quadro: costuma dar de 3 a
-10 segundos numa lista de 20 palavras. Se a diferença de alguma dupla for zero,
-quase sempre a instrução foi lida errado — vale conferir na hora.
--->
 
 ---
 layout: default
@@ -257,12 +208,6 @@ Na primeira aula de direção, trocar a marcha, manter o carro na faixa e olhar 
 retrovisor parecem impossíveis de fazer juntos. Dez anos depois, o mesmo
 motorista faz as três conversando.
 
-<!--
-Ponte para a parte 3: "então já temos duas correções ao modelo da fila. Agora a
-pergunta é como alguém descobre coisas assim — e é aí que as quatro abordagens
-se separam".
--->
-
 ---
 layout: default
 ---
@@ -280,7 +225,7 @@ layout: default
 <div v-click>
 
 **b.** Os olhos registram as duas ocorrências — o que decidiu foi o
-processamento de cima para baixo.
+processamento de cima para baixo (top-down).
 
 </div>
 
@@ -329,11 +274,6 @@ fazem, a teoria estava completa.
 
 <Fonte>Cada vez mais um mesmo estudo usa duas ou três delas juntas — a divisão é de exposição, não de território.</Fonte>
 
-<!--
-Este slide é o mapa: quatro frases, uma por abordagem. Os quatro slides
-seguintes abrem cada um com a definição formal — avise que é ali que se copia.
--->
-
 ---
 layout: default
 ---
@@ -350,11 +290,6 @@ efeito no tempo de resposta e no número de erros.
 
 É exatamente o que vocês acabaram de fazer: a variável manipulada era a lista, e
 o que se mediu foi o cronômetro.
-
-<!--
-Fecha a parte 2 dentro da parte 3 — vale dizer com todas as letras que a turma
-já rodou um experimento desta abordagem.
--->
 
 ---
 layout: default
@@ -376,11 +311,6 @@ layout: default
 
 <Fonte>Adaptado de Eysenck &amp; Keane, cap. 1, Tab. 1.1 (p. 30).</Fonte>
 
-<!--
-"Validade ecológica" é termo de prova. Exemplo curto: memorizar listas de
-palavras num cubículo silencioso não é o que a memória faz num dia comum.
--->
-
 ---
 layout: default
 ---
@@ -397,11 +327,6 @@ a lesão derrubou e o que ela deixou intacto.
 
 Ela não estuda a lesão por interesse na lesão. A lesão é o **instrumento** — é
 ela que separa o que, na mente saudável, sempre aparece junto.
-
-<!--
-Esta é a inversão que a turma estranha: olhar o cérebro quebrado para dizer como
-funciona o inteiro. O caso do próximo slide faz exatamente isso.
--->
 
 ---
 layout: default
@@ -421,12 +346,6 @@ Nos anos 1960 acreditava-se que a informação só chegava à memória de longo
 prazo depois de passar pela de curto. Os dois casos tornaram essa ordem
 insustentável.
 
-<!--
-A definição do slide anterior fica abstrata até aqui: é este par que mostra o
-que "o que a lesão derrubou e o que ela deixou intacto" quer dizer. A pergunta
-do rodapé é literalmente o que o próximo slide responde.
--->
-
 ---
 layout: default
 ---
@@ -445,12 +364,6 @@ O limite vem junto: um par de casos é evidência **razoável**, não prova, de 
 há sistemas separados. E o cérebro se reorganiza depois de uma lesão — parte do
 prejuízo fica escondida atrás de estratégias que o próprio paciente inventou.
 
-<!--
-Se perguntarem "por que não medir muita gente": porque não existem dois
-pacientes com a mesma lesão. Hoje a área prefere séries de casos a caso isolado,
-justamente para conseguir avaliar a variação entre eles.
--->
-
 ---
 layout: default
 ---
@@ -468,12 +381,6 @@ acontece.
 É a mais nova das quatro e a que mais aparece na imprensa. Por isso os slides
 seguintes são, em boa parte, sobre o que ela <span class="ds-em">não</span>
 autoriza concluir.
-
-<!--
-Repare no "ao mesmo tempo" da definição: neuroimagem sem tarefa comportamental
-não é neurociência cognitiva, é anatomia. O que a área quer é a correspondência
-entre os dois registros.
--->
 
 ---
 layout: figura
@@ -495,10 +402,6 @@ lobo occipital" quer dizer **onde**, e que dizer onde não é o mesmo que
 explicar o quê.
 
 <Fonte>Figura reproduzida de Eysenck &amp; Keane, <em>Manual de psicologia cognitiva</em>, 7ª ed. (Artmed, 2017), p. 10. Uso didático.</Fonte>
-
-<!--
-Slide cortável se o relógio apertar — a anatomia volta na aula 03.
--->
 
 ---
 layout: figura
@@ -523,14 +426,6 @@ que autoriza dizer que aquela área é *necessária* para a tarefa.
 
 <Fonte>Figura reproduzida de Eysenck &amp; Keane, <em>Manual de psicologia cognitiva</em>, 7ª ed. (Artmed, 2017), p. 14. Uso didático.</Fonte>
 
-<!--
-Se a turma quiser um exemplo de registro de neurônio isolado: em pacientes com
-epilepsia já implantados, Quiroga e colaboradores (2005) acharam um neurônio no
-lobo temporal medial que disparava para fotos da Jennifer Aniston e não para
-outras celebridades. É divertido e serve para introduzir a cautela: só uma
-fração ínfima dos neurônios daquela região foi registrada.
--->
-
 ---
 layout: default
 ---
@@ -550,13 +445,6 @@ Num levantamento de 3.489 estudos, o córtex pré-frontal dorsolateral apareceu
 ativado em 20% de **todos** eles, nas tarefas mais diferentes possíveis.
 
 <Fonte>Lindquist et al. (2012); Yarkoni et al. (2011), citados em Eysenck &amp; Keane, cap. 1.</Fonte>
-
-<!--
-Manchete real, do Guardian em 2007: "Exames do cérebro localizam como os
-chocólatras se tornam dependentes". O achado era que ver chocolate ativa mais
-os centros de recompensa em quem gosta muito de chocolate. Ou seja: quem gosta
-de chocolate acha chocolate gratificante.
--->
 
 ---
 layout: figura
@@ -579,11 +467,6 @@ estatística **falsos-positivos aparecem em até 15% das vezes**.
 
 <Fonte>Bennett, C. M., Baird, A. A., Miller, M. B., &amp; Wolford, G. L. (2009). Figura reproduzida de Eysenck &amp; Keane, <em>Manual de psicologia cognitiva</em>, 7ª ed. (Artmed, 2017), p. 22. Uso didático.</Fonte>
 
-<!--
-O trabalho ganhou o Ig Nobel de 2012. Vale dizer que os autores não estavam
-zombando da técnica, e sim da prática de não corrigir o limiar.
--->
-
 ---
 layout: default
 ---
@@ -604,12 +487,6 @@ layout: default
 
 Nada disso desqualifica a técnica: ela pede a leitura crítica de sempre.
 
-<!--
-Se alguém achar que a aula está "contra" a neuroimagem, corrija na hora: a
-crítica interna é o que faz a área se autocorrigir. Foi ela que derrubou a
-ideia de que o reconhecimento de rostos morava só na área fusiforme da face.
--->
-
 ---
 layout: default
 ---
@@ -627,11 +504,6 @@ pessoas produzem — os mesmos acertos e, principalmente, os mesmos erros.
 Escrever a teoria como programa obriga a ser explícito: teoria em palavras
 admite margem de manobra; um programa, não — ou ele roda, ou falta alguma peça
 que o texto escondia.
-
-<!--
-"Os mesmos erros" é o critério que separa esta abordagem da IA, e é a ponte para
-o rodapé do próximo slide.
--->
 
 ---
 layout: figura
@@ -651,13 +523,6 @@ Os **sistemas de produção** são o oposto — regras "se…, então…" escrit
 do tipo *se o sinal de pedestre está verde, então atravesse*.
 
 <Fonte>Não confundir com inteligência artificial: o Deep Blue venceu Kasparov em 1997 avaliando 200 milhões de posições por segundo. Ninguém joga xadrez assim. Modelar é imitar o processo humano; a IA só precisa do resultado.</Fonte>
-
-<!--
-Slide cortável se o relógio apertar. Se sobrar tempo, o limite mais elegante é
-o paradoxo de Bonini: um modelo fica mais realista à medida que fica mais
-completo, e nesse ponto ele já é tão difícil de entender quanto a coisa que ele
-deveria explicar. Um mapa do tamanho do território é exato e inútil.
--->
 
 ---
 layout: secao
@@ -737,8 +602,3 @@ layout: default
   titulo="Manual de psicologia cognitiva"
   onde="Artmed, 7ª ed."
   capitulo="cap. 1, p. 1–33 — o quadro é uma adaptação da Tab. 1.1, p. 30" />
-
-<!--
-Este quadro é o que cai na primeira avaliação. Diga isso.
--->
-
