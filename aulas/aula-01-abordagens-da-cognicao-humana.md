@@ -580,7 +580,7 @@ title: O que fica
 pontos:
   - Entre estímulo e resposta há processos que só se alcançam por inferência
   - "Quatro abordagens: a força de uma cobre o limite da outra"
-proximo: Aula 02 — Percepção visual e reconhecimento de objetos
+proximo: "Aula 02 — Percepção e atenção: função e correlação neuroanatômica"
 leitura: Eysenck &amp; Keane, cap. 1 (p. 1–33) — a Tab. 1.1 com atenção
 ---
 ---

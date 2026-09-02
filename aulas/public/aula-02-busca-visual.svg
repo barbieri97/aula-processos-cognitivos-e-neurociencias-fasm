@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 660" role="img" aria-label="Busca visual por traco isolado e por conjuncao de tracos">
+  <title>Busca por traço isolado × busca por conjunção</title>
+  <desc>Dois campos de busca: no primeiro o alvo difere por uma unica caracteristica e salta aos olhos; no segundo ele so se define pela combinacao de cor e forma, e precisa ser procurado item a item. Abaixo, o tempo de reacao em funcao do numero de itens.</desc>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
+
+    <!-- ============ A: traco isolado ============ -->
+    <text x="40" y="36" font-size="17" font-weight="700">traço isolado</text>
+    <text x="40" y="58" font-size="13.5" fill="#605d75">ache o item terracota</text>
+    <rect x="40" y="72" width="300" height="232" rx="8" fill="#ffffff" stroke="#605d75" stroke-width="2"/>
+    <g fill="#4b3ba6">
+      <circle cx="80"  cy="120" r="13"/><circle cx="150" cy="110" r="13"/><circle cx="220" cy="128" r="13"/><circle cx="290" cy="115" r="13"/>
+      <circle cx="70"  cy="175" r="13"/><circle cx="140" cy="168" r="13"/><circle cx="285" cy="170" r="13"/>
+      <circle cx="95"  cy="235" r="13"/><circle cx="165" cy="228" r="13"/><circle cx="235" cy="240" r="13"/><circle cx="305" cy="232" r="13"/>
+      <circle cx="120" cy="285" r="13"/><circle cx="195" cy="278" r="13"/><circle cx="265" cy="290" r="13"/>
+    </g>
+    <circle cx="215" cy="180" r="13" fill="#a84a1a"/>
+
+    <!-- ============ B: conjuncao ============ -->
+    <text x="400" y="36" font-size="17" font-weight="700">conjunção de traços</text>
+    <text x="400" y="58" font-size="13.5" fill="#605d75">ache o <tspan font-weight="700">círculo</tspan> terracota</text>
+    <rect x="400" y="72" width="300" height="232" rx="8" fill="#ffffff" stroke="#605d75" stroke-width="2"/>
+    <g fill="#4b3ba6">
+      <circle cx="440" cy="120" r="13"/><circle cx="580" cy="128" r="13"/>
+      <circle cx="500" cy="168" r="13"/><circle cx="645" cy="170" r="13"/>
+      <circle cx="525" cy="228" r="13"/><circle cx="665" cy="232" r="13"/>
+      <circle cx="480" cy="285" r="13"/><circle cx="625" cy="290" r="13"/>
+    </g>
+    <g fill="#a84a1a">
+      <rect x="497" y="97"  width="26" height="26"/><rect x="637" y="102" width="26" height="26"/>
+      <rect x="417" y="162" width="26" height="26"/>
+      <rect x="442" y="222" width="26" height="26"/><rect x="582" y="227" width="26" height="26"/>
+      <rect x="542" y="265" width="26" height="26"/>
+    </g>
+    <circle cx="575" cy="180" r="13" fill="#a84a1a"/>
+
+    <!-- ============ grafico ============ -->
+    <line x1="40" y1="336" x2="720" y2="336" stroke="#e6e2dc" stroke-width="2"/>
+    <text x="40" y="372" font-size="16" font-weight="700">O que o cronômetro mostra quando se aumenta o número de itens</text>
+
+    <g stroke="#1e1c2b" stroke-width="2.5" fill="none">
+      <line x1="130" y1="400" x2="130" y2="560"/>
+      <line x1="130" y1="560" x2="640" y2="560"/>
+    </g>
+    <text x="76" y="482" font-size="14" font-weight="600" text-anchor="middle" transform="rotate(-90 76 482)">tempo de reação</text>
+    <g font-size="13.5" fill="#605d75" text-anchor="middle">
+      <text x="130" y="584">1</text><text x="300" y="584">5</text><text x="470" y="584">15</text><text x="640" y="584">30</text>
+    </g>
+    <text x="385" y="610" font-size="14" font-weight="600" text-anchor="middle">itens na tela</text>
+
+    <path d="M130 534 L300 528 L470 522 L640 516" fill="none" stroke="#2c6e49" stroke-width="5" stroke-linecap="round"/>
+    <path d="M130 528 L300 486 L470 444 L640 404" fill="none" stroke="#a84a1a" stroke-width="5" stroke-linecap="round"/>
+
+    <text x="654" y="520" font-size="14.5" font-weight="700" fill="#2c6e49">traço isolado</text>
+    <text x="654" y="400" font-size="14.5" font-weight="700" fill="#a84a1a">conjunção</text>
+
+    <text x="152" y="440" font-size="14" fill="#605d75">plana: os itens são processados em paralelo, sem atenção focada</text>
+    <text x="152" y="462" font-size="14" fill="#605d75">inclinada: um item de cada vez — a atenção é a cola dos traços</text>
+
+    <text x="40" y="648" font-size="14" fill="#605d75">Treisman e Gelade (1980). Gráfico esquemático: a inclinação é o achado, não os valores.</text>
+  </g>
+</svg>

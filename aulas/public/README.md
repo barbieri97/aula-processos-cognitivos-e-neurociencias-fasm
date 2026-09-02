@@ -34,6 +34,18 @@ Nome no padrão `aula-NN-<assunto>`, para dar para apagar tudo de uma aula de um
 | `aula-01-rede-conexionista.png` | Fig. 1.9 — rede de três camadas |
 | `aula-01-stroop-lista-a.svg` | material da atividade: palavra e tinta concordam |
 | `aula-01-stroop-lista-b.svg` | material da atividade: palavra e tinta divergem |
+| `aula-02-via-visual.svg` | esquema 1 — retina, quiasma, LGN e V1/V2; cada hemicampo no hemisfério oposto |
+| `aula-02-areas-visuais.svg` | esquema 2 — V1 a V5/MT e a função de cada área (Zeki) |
+| `aula-02-gestalt.svg` | esquema 3 — proximidade, similaridade, boa continuidade, fechamento e figura-fundo |
+| `aula-02-vias-ventral-dorsal.svg` | esquema 4 — corrente ventral (o quê) e dorsal (como) |
+| `aula-02-areas-face.svg` | esquema 5 — FFA e OFA em vista ventral |
+| `aula-02-tipos-atencao.svg` | esquema 6 — o mapa dos tipos de atenção, a partir de Lima (2005) |
+| `aula-02-vigilancia.svg` | esquema 7 — o decremento da vigilância ao longo do tempo |
+| `aula-02-tarefa-dupla.svg` | esquema 8 — quando a atenção dividida funciona, e quando não |
+| `aula-02-posner.svg` | esquema 9 — o paradigma da pista: válida, neutra, inválida |
+| `aula-02-redes-atencao.svg` | esquema 10 — rede de atenção dorsal e ventral |
+| `aula-02-negligencia.svg` | esquema 11 — relógio, bissecção de linha e cancelamento |
+| `aula-02-busca-visual.svg` | esquema 12 — busca por traço isolado × por conjunção |
 
 Os `.png` da aula 01 são recortes das figuras de **Eysenck & Keane, _Manual de psicologia
 cognitiva_, 7ª ed. (Artmed, 2017), cap. 1** — a bibliografia da disciplina —, extraídos do
@@ -44,6 +56,11 @@ aparecer atrás em vez de um retângulo branco.
 
 As duas listas do Stroop não vêm do livro: são SVGs gerados para a atividade, nas quatro
 cores que passam de 4.5:1 sobre o fundo do slide.
+
+Os doze `aula-02-*.svg` são **autorais**: foram desenhados para esta aula a partir do texto de
+Eysenck & Keane (cap. 2, 3 e 5) e de Lima (2005), e não reproduzem figura de nenhum dos dois.
+Os que mostram anatomia dizem "esquema" na própria legenda — as posições são aproximadas e
+servem para localizar, não para estudar neuroanatomia.
 
 ### Como recortar uma figura nova de um PDF
 

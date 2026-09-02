@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="Decremento da vigilancia ao longo do tempo na tarefa">
+  <title>O decremento da vigilância</title>
+  <desc>Grafico esquematico: a proporcao de alvos detectados cai a medida que o tempo na tarefa aumenta, mesmo com a tarefa e o observador inalterados.</desc>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
+
+    <text x="60" y="40" font-size="19" font-weight="700">Atenção sustentada, medida ao longo do tempo</text>
+    <text x="60" y="64" font-size="14.5" fill="#605d75">Teste de Performance Contínua: alvos raros, sessão longa, resposta a cada alvo.</text>
+
+    <!-- grade -->
+    <g stroke="#e6e2dc" stroke-width="1.5">
+      <line x1="110" y1="120" x2="660" y2="120"/>
+      <line x1="110" y1="180" x2="660" y2="180"/>
+      <line x1="110" y1="240" x2="660" y2="240"/>
+      <line x1="110" y1="300" x2="660" y2="300"/>
+    </g>
+
+    <!-- eixos -->
+    <g stroke="#1e1c2b" stroke-width="2.5" fill="none">
+      <line x1="110" y1="100" x2="110" y2="360"/>
+      <line x1="110" y1="360" x2="660" y2="360"/>
+    </g>
+
+    <!-- rotulos eixo y -->
+    <g font-size="13.5" fill="#605d75" text-anchor="end">
+      <text x="100" y="125">100%</text>
+      <text x="100" y="185">90%</text>
+      <text x="100" y="245">80%</text>
+      <text x="100" y="305">70%</text>
+      <text x="100" y="365">60%</text>
+    </g>
+    <text x="40" y="240" font-size="14.5" font-weight="600" text-anchor="middle" transform="rotate(-90 40 240)">alvos detectados</text>
+
+    <!-- rotulos eixo x -->
+    <g font-size="13.5" fill="#605d75" text-anchor="middle">
+      <text x="110" y="386">0</text>
+      <text x="247" y="386">10</text>
+      <text x="385" y="386">20</text>
+      <text x="522" y="386">30</text>
+      <text x="660" y="386">40</text>
+    </g>
+    <text x="385" y="412" font-size="14.5" font-weight="600" text-anchor="middle">minutos na tarefa</text>
+
+    <!-- curva -->
+    <path d="M110 138 C 180 148, 210 186, 247 208 C 300 238, 340 258, 385 272
+             C 450 292, 520 306, 660 318"
+          fill="none" stroke="#a84a1a" stroke-width="6" stroke-linecap="round"/>
+    <g fill="#a84a1a">
+      <circle cx="110" cy="138" r="7"/>
+      <circle cx="247" cy="208" r="7"/>
+      <circle cx="385" cy="272" r="7"/>
+      <circle cx="522" cy="303" r="7"/>
+      <circle cx="660" cy="318" r="7"/>
+    </g>
+
+    <!-- anotacao -->
+    <line x1="300" y1="150" x2="300" y2="242" stroke="#605d75" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="312" y="152" font-size="15" font-weight="700">a tarefa não mudou</text>
+    <text x="312" y="174" font-size="14.5" fill="#605d75">o observador é o mesmo,</text>
+    <text x="312" y="194" font-size="14.5" fill="#605d75">os alvos são os mesmos —</text>
+    <text x="312" y="214" font-size="14.5" fill="#605d75">o que cede é a sustentação</text>
+
+    <!-- rodape -->
+    <line x1="60" y1="446" x2="660" y2="446" stroke="#e6e2dc" stroke-width="2"/>
+    <text x="60" y="476" font-size="14.5" fill="#605d75">Curva esquemática: importa a forma do decremento, não os valores.</text>
+    <text x="60" y="498" font-size="14.5" fill="#605d75">Vigilância depende de lobos frontal e parietal, sobretudo à direita.</text>
+  </g>
+</svg>
