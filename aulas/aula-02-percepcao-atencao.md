@@ -102,9 +102,9 @@ metades correm em <span class="ds-em">vias diferentes</span>.
 
 ---
 layout: figura
-imagem: /aula-02-via-visual.svg
-rotulo: Esquema 1
-legenda: "Da retina ao córtex occipital: o percurso é fixo e cada etapa tem nome."
+imagem: /aula-02-via-visual.png
+rotulo: Fig. 2.2
+legenda: "Rota dos sinais visuais: no quiasma, cada metade do campo vai para o hemisfério oposto. Eysenck &amp; Keane (2017)."
 lado: direita
 ajuste: contain
 ---
@@ -126,9 +126,9 @@ também aparece na literatura como córtex visual primário ou BA17.
 
 ---
 layout: figura
-imagem: /aula-02-areas-visuais.svg
-rotulo: Esquema 2
-legenda: Áreas e funções segundo Zeki (1993, 2005). Posições aproximadas.
+imagem: /aula-02-areas-visuais.png
+rotulo: Fig. 2.7
+legenda: Secção transversal do córtex visual do macaco, com V1 a V5. Zeki (1992), em Eysenck &amp; Keane (2017).
 lado: direita
 ajuste: contain
 ---
@@ -147,9 +147,9 @@ comparar posições no mesmo instante.
 
 ---
 layout: figura
-imagem: /aula-02-gestalt.svg
-rotulo: Esquema 3
-legenda: Quatro leis da Gestalt e a discriminação figura-fundo.
+imagem: /aula-02-gestalt.png
+rotulo: Figs. 3.3 e 3.4
+legenda: "Proximidade, similaridade, boa continuidade e fechamento; abaixo, o desenho ambíguo faces-cálice. Eysenck &amp; Keane (2017)."
 lado: direita
 ajuste: contain
 ---
@@ -215,9 +215,9 @@ note: A mesma imagem alimenta dois sistemas com funções diferentes. Dá para p
 
 ---
 layout: figura
-imagem: /aula-02-vias-ventral-dorsal.svg
-rotulo: Esquema 4
-legenda: As duas correntes partem de V1 e terminam em lobos diferentes.
+imagem: /aula-02-vias-ventral-dorsal.png
+rotulo: Fig. 2.3
+legenda: "As vias ventral (“o quê”) e dorsal (“como”) têm origem em V1. Gazzaniga e colaboradores (2008), em Eysenck &amp; Keane (2017)."
 lado: direita
 ajuste: contain
 ---
@@ -301,9 +301,9 @@ posterior.
 
 ---
 layout: figura
-imagem: /aula-02-areas-face.svg
-rotulo: Esquema 5
-legenda: Duas das áreas que respondem seletivamente a faces. Posições aproximadas.
+imagem: /aula-02-areas-face.jpg
+rotulo: Fig. 3.13
+legenda: "Regiões seletivas de faces: área facial anterior (AFP2), fusiforme (FFA) e occipital (OFA). Weiner &amp; Grill-Spector (2012), em Eysenck &amp; Keane (2017)."
 lado: direita
 ajuste: contain
 ---
@@ -461,7 +461,7 @@ pergunta: "Não é uma escala de esforço: são <span class='ds-em'>dois modos d
 ---
 layout: figura
 imagem: /aula-02-tipos-atencao.svg
-rotulo: Esquema 6
+rotulo: Esquema 1
 legenda: Três critérios independentes de classificação. Esquema autoral, a partir de Lima (2005).
 lado: direita
 ajuste: contain
@@ -517,7 +517,7 @@ Escuta dicótica — mensagens diferentes apresentadas a cada ouvido ao mesmo te
 ---
 layout: figura
 imagem: /aula-02-vigilancia.svg
-rotulo: Esquema 7
+rotulo: Esquema 2
 legenda: O decremento da vigilância — curva esquemática.
 lado: direita
 ajuste: contain
@@ -574,7 +574,7 @@ primeiro item depois da troca.
 ---
 layout: figura
 imagem: /aula-02-tarefa-dupla.svg
-rotulo: Esquema 8
+rotulo: Esquema 3
 legenda: A condição em que duas tarefas simultâneas funcionam — e a em que não funcionam.
 lado: direita
 ajuste: contain
@@ -688,7 +688,7 @@ note: Cada função atencional tem estruturas associadas — e é por isso que u
 ---
 layout: figura
 imagem: /aula-02-posner.svg
-rotulo: Esquema 9
+rotulo: Esquema 4
 legenda: "Pista válida, neutra e inválida: o tempo de reação mede o deslocamento da atenção."
 lado: direita
 ajuste: contain
@@ -734,9 +734,9 @@ pergunta: É a mesma distinção de voluntária e involuntária, agora com um <s
 
 ---
 layout: figura
-imagem: /aula-02-redes-atencao.svg
-rotulo: Esquema 10
-legenda: Rede dorsal e rede ventral. Posições aproximadas.
+imagem: /aula-02-redes-atencao.png
+rotulo: Fig. 5.6
+legenda: Áreas de cada rede, por conectividade funcional. Corbetta &amp; Shulman (2011), em Eysenck &amp; Keane (2017).
 lado: direita
 ajuste: contain
 ---
@@ -809,9 +809,9 @@ sanguíneo nessas áreas.
 
 ---
 layout: figura
-imagem: /aula-02-negligencia.svg
-rotulo: Esquema 11
-legenda: A mesma falha em três tarefas de papel e lápis.
+imagem: /aula-02-negligencia.png
+rotulo: Fig. 5.7
+legenda: "Cópia de figuras e desenho do relógio, por um paciente com negligência: o lado esquerdo some nas duas. Danckert &amp; Ferber (2006), em Eysenck &amp; Keane (2017)."
 lado: direita
 ajuste: contain
 ---
@@ -835,9 +835,9 @@ deixa de ser detectado quando outro é apresentado ao mesmo tempo do lado da les
 
 ---
 layout: figura
-imagem: /aula-02-busca-visual.svg
-rotulo: Esquema 12
-legenda: "Busca por traço isolado e por conjunção: o número de itens só pesa na segunda."
+imagem: /aula-02-busca-visual.png
+rotulo: Fig. 5.9
+legenda: "Busca por traço isolado e por conjunção: o número de itens só pesa na segunda. Dados de Treisman e Gelade (1980), em Eysenck &amp; Keane (2017)."
 lado: direita
 ajuste: contain
 ---
@@ -853,6 +853,29 @@ Propôs, com Garry Gelade em 1980, a **teoria da integração de traços**.
 Traços isolados — cor, tamanho, orientação — são processados em paralelo, sem
 atenção. Ligar dois traços num objeto exige atenção focada, **um item por vez**.
 Sem ela, os traços se recombinam ao acaso: é a **conjunção ilusória**.
+
+---
+layout: figura
+imagem: /aula-02-raio-x-bagagem.jpg
+rotulo: Fig. 5.8
+legenda: Uma imagem real de raio-X de bagagem — há uma arma nela. McCarley e colaboradores (2004), em Eysenck &amp; Keane (2017).
+lado: direita
+ajuste: contain
+---
+
+# Ache a arma
+
+É esta a tarefa de quem opera o raio-X do aeroporto: uma **busca por conjunção**
+num display cheio, com os objetos sobrepostos e em qualquer orientação.
+
+Quanto tempo levou? <mark>Agora imagine seis horas de turno</mark> — e um alvo que
+quase nunca aparece.
+
+<!--
+A arma está um pouco acima do centro da imagem. Vale dar uns 20 segundos à turma
+antes de apontar — o ponto do slide seguinte é que, no turno real, o alvo é raro,
+e é a raridade que derruba a detecção.
+-->
 
 ---
 layout: default
