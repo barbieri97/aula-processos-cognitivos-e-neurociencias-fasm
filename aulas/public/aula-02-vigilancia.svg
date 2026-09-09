@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="Decremento da vigilancia ao longo do tempo na tarefa">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" role="img" aria-label="Decremento da vigilancia ao longo do tempo na tarefa">
   <title>O decremento da vigilância</title>
   <desc>Grafico esquematico: a proporcao de alvos detectados cai a medida que o tempo na tarefa aumenta, mesmo com a tarefa e o observador inalterados.</desc>
 
@@ -60,9 +60,5 @@
     <text x="312" y="194" font-size="14.5" fill="#605d75">os alvos são os mesmos —</text>
     <text x="312" y="214" font-size="14.5" fill="#605d75">o que cede é a sustentação</text>
 
-    <!-- rodape -->
-    <line x1="60" y1="446" x2="660" y2="446" stroke="#e6e2dc" stroke-width="2"/>
-    <text x="60" y="476" font-size="14.5" fill="#605d75">Curva esquemática: importa a forma do decremento, não os valores.</text>
-    <text x="60" y="498" font-size="14.5" fill="#605d75">Vigilância depende de lobos frontal e parietal, sobretudo à direita.</text>
   </g>
 </svg>

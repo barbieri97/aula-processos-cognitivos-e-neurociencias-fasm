@@ -24,7 +24,7 @@ layout: default
 # Para onde vamos
 
 <Objetivos :itens="[
-  'Descrever o percurso do sinal visual da retina ao córtex e nomear a função de V1 a V5/MT',
+  'Descrever o percurso do sinal visual da retina ao córtex',
   'Distinguir atenção seletiva, sustentada, alternada e dividida, e reconhecer cada uma em situações do dia a dia',
   'Relacionar cada função atencional às estruturas cerebrais envolvidas'
 ]" />
@@ -149,7 +149,8 @@ comparar posições no mesmo instante.
 layout: figura
 imagem: /aula-02-gestalt.png
 rotulo: Figs. 3.3 e 3.4
-legenda: "Proximidade, similaridade, boa continuidade e fechamento; abaixo, o desenho ambíguo faces-cálice. Eysenck &amp; Keane (2017)."
+legenda: "Proximidade, similaridade, boa continuidade e fechamento; abaixo, o
+  desenho ambíguo faces-cálice. Eysenck &amp; Keane (2017)."
 lado: direita
 ajuste: contain
 ---
@@ -163,47 +164,13 @@ da Gestalt são casos particulares dela.
 
 </Termo>
 
-Não são curiosidades de livro-texto: são elas que decidem, na plataforma lotada,
+são elas que decidem, na plataforma lotada,
 quais manchas formam <span class="ds-em">uma</span> pessoa.
 
 <!--
 Prägnanz — palavra alemã, sem tradução consagrada; a ideia é a de "boa forma",
 concisão. Pronuncia-se aproximadamente "prégnants".
 -->
-
----
-layout: default
----
-
-<Checagem
-  rotulo="Checagem 1"
-  pergunta="Uma lesão destrói a área V4 do hemisfério direito. Qual queixa é a mais esperada?"
-  :alternativas="[
-    'Cegueira completa no campo visual esquerdo',
-    'Dificuldade em perceber cor na metade esquerda do campo visual',
-    'Dificuldade em reconhecer o rosto de pessoas conhecidas',
-    'Dificuldade em perceber movimento na metade direita do campo visual',
-  ]" />
-
----
-layout: default
----
-
-# Resposta 1
-
-<Nota tipo="ok" titulo="b. Dificuldade em perceber cor na metade esquerda do campo visual">
-
-V4 processa **cor**, e o hemisfério direito recebe o campo visual **esquerdo**.
-As duas metades da resposta têm de bater.
-
-</Nota>
-
-- **a** confunde área especializada com via inteira: cegueira de um hemicampo vem
-  de lesão em V1 ou antes dela, não de uma área de atributo.
-- **c** troca V4 pelo território do reconhecimento de faces, que fica adiante, no
-  córtex temporal ventral.
-- **d** acerta o lado e erra a área — movimento é V5/MT —, e ainda inverte o
-  hemicampo.
 
 ---
 layout: secao
@@ -217,7 +184,8 @@ note: A mesma imagem alimenta dois sistemas com funções diferentes. Dá para p
 layout: figura
 imagem: /aula-02-vias-ventral-dorsal.png
 rotulo: Fig. 2.3
-legenda: "As vias ventral (“o quê”) e dorsal (“como”) têm origem em V1. Gazzaniga e colaboradores (2008), em Eysenck &amp; Keane (2017)."
+legenda: "As vias ventral (“o quê”) e dorsal (“como/onde”) têm origem em V1.
+  Gazzaniga e colaboradores (2008), em Eysenck &amp; Keane (2017)."
 lado: direita
 ajuste: contain
 ---
@@ -462,18 +430,11 @@ pergunta: "Não é uma escala de esforço: são <span class='ds-em'>dois modos d
 layout: figura
 imagem: /aula-02-tipos-atencao.svg
 rotulo: Esquema 1
-legenda: Três critérios independentes de classificação. Esquema autoral, a partir de Lima (2005).
-lado: direita
+legenda: Três critérios independentes de classificação. Esquema autoral, a
+  partir de Lima (2005).
+lado: cheia
 ajuste: contain
 ---
-
-# O mapa dos tipos
-
-A mesma atenção é classificada por **três critérios ao mesmo tempo**: pela
-natureza, pela operacionalização e pelo foco.
-
-Os próximos quatro slides são a coluna do meio — a que interessa quando se quer
-descrever o que uma pessoa **consegue ou não consegue fazer**.
 
 <Fonte>Foco externo é chamado de percepção seletiva; foco interno, de cognição seletiva. Gazzaniga e colaboradores (1998); Lent (2002).</Fonte>
 
@@ -496,12 +457,6 @@ mecanismo básico, do qual os demais dependem.
 A conversa atrás de você continua audível — e ainda assim a linha do texto avança.
 
 </Cartao>
-<Cartao rotulo="como se mede" titulo="Escuta dicótica e Stroop">
-
-Mensagens diferentes em cada ouvido; ou nomear a cor da tinta ignorando a palavra
-impressa.
-
-</Cartao>
 </Grade>
 
 <Fonte>Desde os anos 1950 discute-se <em>em que ponto</em> a seleção acontece. A evidência fica no meio: o canal descartado recebe algum processamento, só que menos.</Fonte>
@@ -515,12 +470,7 @@ Escuta dicótica — mensagens diferentes apresentadas a cada ouvido ao mesmo te
 -->
 
 ---
-layout: figura
-imagem: /aula-02-vigilancia.svg
-rotulo: Esquema 2
-legenda: O decremento da vigilância — curva esquemática.
-lado: direita
-ajuste: contain
+layout: default
 ---
 
 # 2. Atenção sustentada
@@ -532,14 +482,41 @@ estímulos, **durante um período de tempo**.
 
 </Termo>
 
-No dia a dia: acompanhar uma aula inteira. A queda ao longo do tempo não é falta
-de interesse — é uma propriedade do sistema, e por isso <mark>é medida em minutos,
+<Grade :cols="2">
+<Cartao rotulo="no dia a dia" titulo="Acompanhar uma aula inteira">
+
+A queda ao longo do tempo não é falta de interesse — é uma propriedade do sistema.
+
+</Cartao>
+<Cartao rotulo="como se mede" titulo="Teste de Performance Contínua">
+
+Sessão longa, alvos raros, uma resposta a cada alvo: <mark>a medida é em minutos,
 não em acertos</mark>.
 
+</Cartao>
+</Grade>
+
 <!--
-Teste de Performance Contínua (Continuous Performance Test, CPT) — tarefa longa
-com alvos raros; pontua erros, omissões e tempo de reação.
+Teste de Performance Contínua (Continuous Performance Test, CPT) — pontua erros,
+omissões e tempo de reação ao longo da sessão.
 -->
+
+---
+layout: figura
+imagem: /aula-02-vigilancia.svg
+rotulo: Esquema 2
+legenda: "O decremento da vigilância. Curva esquemática: importa a forma da
+  queda, não os valores."
+lado: cheia
+ajuste: contain
+---
+
+# O decremento da vigilância
+
+A tarefa não mudou, os alvos são os mesmos, o observador é o mesmo — e a detecção
+cai assim mesmo. O que cede é a sustentação.
+
+<Fonte>A vigilância depende dos lobos frontal e parietal, sobretudo à direita. Sarter e colaboradores (2001).</Fonte>
 
 ---
 layout: default
@@ -561,23 +538,12 @@ Você não faz as duas coisas juntas. Você vai e volta — e cada ida e volta c
 um pedágio de tempo.
 
 </Cartao>
-<Cartao rotulo="como se mede" titulo="WCST e Trail Making">
-
-Tarefas em que a regra muda no meio do caminho, e o custo aparece no tempo do
-primeiro item depois da troca.
-
-</Cartao>
 </Grade>
 
 <Fonte>WCST — Wisconsin Card Sorting Test. Culbertson &amp; Krull (1996) classificam os dois como medidas de flexibilidade.</Fonte>
 
 ---
-layout: figura
-imagem: /aula-02-tarefa-dupla.svg
-rotulo: Esquema 3
-legenda: A condição em que duas tarefas simultâneas funcionam — e a em que não funcionam.
-lado: direita
-ajuste: contain
+layout: default
 ---
 
 # 4. Atenção dividida
@@ -589,16 +555,44 @@ mediada por processamento automático e a outra por processamento controlado.
 
 </Termo>
 
+<Grade :cols="2">
+<Cartao rotulo="no dia a dia" titulo="Dirigir e conversar">
+
+Por um trajeto conhecido, dá conta. Num cruzamento desconhecido, não dá — e a
+conversa para sem que ninguém decida parar.
+
+</Cartao>
+<Cartao rotulo="o limite" titulo="Duas tarefas controladas">
+
 Se as duas exigirem esforço cognitivo, elas disputam a mesma capacidade limitada
 — e o desempenho cai nas duas.
+
+</Cartao>
+</Grade>
+
+<Fonte>Lima (2005); Eysenck &amp; Keane (1994).</Fonte>
+
+---
+layout: figura
+imagem: /aula-02-tarefa-dupla.svg
+rotulo: Esquema 3
+legenda: A condição em que duas tarefas simultâneas funcionam — e a em que não funcionam.
+lado: cheia
+ajuste: contain
+---
+
+# Três condições que melhoram a tarefa dupla
+
+- as tarefas são **dissimilares** — usam canais diferentes
+- as tarefas são **relativamente fáceis**
+- as tarefas são **bem treinadas** — a prática é o que automatiza uma delas
 
 ---
 layout: atividade
 title: Quatro situações, quatro nomes
-tempo: 8 min
-formato: em duplas
 passos:
-  - "Classifiquem cada situação abaixo: seletiva, sustentada, alternada ou dividida"
+  - "Classifiquem cada situação abaixo: seletiva, sustentada, alternada ou
+    dividida"
   - "Escrevam, em uma linha, o que decidiu o nome"
 entrega: A lista classificada, e a situação em que a dupla discordou
 ---

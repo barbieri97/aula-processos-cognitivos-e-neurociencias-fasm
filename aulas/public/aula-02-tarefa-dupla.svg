@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" role="img" aria-label="Esquema da condicao em que a atencao dividida funciona">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 270" role="img" aria-label="Esquema da condicao em que a atencao dividida funciona">
   <title>Quando a atenção dividida funciona</title>
   <desc>Duas tarefas simultaneas so vao bem quando uma delas e processada automaticamente; se as duas exigem processamento controlado, elas disputam a mesma capacidade limitada.</desc>
 
@@ -55,18 +55,5 @@
       </marker>
     </defs>
 
-    <!-- exemplos -->
-    <line x1="40" y1="286" x2="740" y2="286" stroke="#e6e2dc" stroke-width="2"/>
-    <text x="40" y="322" font-size="16" font-weight="700">Três condições que melhoram o desempenho em tarefa dupla</text>
-    <g font-size="15.5" fill="#605d75">
-      <circle cx="52" cy="352" r="5" fill="#a84a1a"/><text x="72" y="358">as tarefas são <tspan font-weight="700" fill="#1e1c2b">dissimilares</tspan> — usam canais diferentes</text>
-      <circle cx="52" cy="386" r="5" fill="#a84a1a"/><text x="72" y="392">as tarefas são <tspan font-weight="700" fill="#1e1c2b">relativamente fáceis</tspan></text>
-      <circle cx="52" cy="420" r="5" fill="#a84a1a"/><text x="72" y="426">as tarefas são <tspan font-weight="700" fill="#1e1c2b">bem treinadas</tspan> — a prática é o que automatiza uma delas</text>
-    </g>
-
-    <line x1="40" y1="458" x2="740" y2="458" stroke="#e6e2dc" stroke-width="2"/>
-    <text x="40" y="492" font-size="15" fill="#605d75">Dirigir por um trajeto conhecido e conversar: dá conta. Num cruzamento</text>
-    <text x="40" y="514" font-size="15" fill="#605d75">desconhecido, não dá — e a conversa para sem que ninguém decida parar.</text>
-    <text x="40" y="544" font-size="14" fill="#605d75">Lima (2005); Eysenck e Keane (1994).</text>
   </g>
 </svg>
