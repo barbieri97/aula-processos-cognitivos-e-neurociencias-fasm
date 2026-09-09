@@ -190,13 +190,26 @@ lado: direita
 
 # O layout `figura`
 
-Imagem de um lado, texto do outro. `lado: esquerda` troca os dois de lugar, e
-`ajuste: cover` faz a imagem preencher em vez de caber inteira.
+Imagem de um lado, texto do outro. `lado: esquerda` troca os dois de lugar,
+`lado: cheia` dá a largura toda à imagem, e `ajuste: cover` faz a imagem
+preencher em vez de caber inteira.
 
 O `rotulo` numera a figura: vale a pena quando a aula volta a ela depois —
 "lembram da Fig. 1?" é mais barato que repetir o slide.
 
 <!-- Situação: quando a imagem É o argumento e o texto comenta. Para imagem decorativa, o layout `image-right` do Slidev serve e dá menos trabalho. -->
+
+---
+layout: figura
+imagem: /exemplo-figura.svg
+rotulo: Fig. 2
+legenda: "Com <code>lado: cheia</code> a figura ocupa a largura do slide."
+lado: cheia
+---
+
+<Fonte>Sem texto, a coluna de comentário ficaria vazia — e a figura, espremida à toa.</Fonte>
+
+<!-- Situação: o slide em que a figura É o slide. O texto, se houver, vira uma faixa curta em cima; sem texto, a faixa some sozinha. -->
 
 ---
 layout: secao

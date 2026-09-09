@@ -6,7 +6,7 @@
   imagem: /exemplo-figura.svg
   rotulo: Fig. 2
   legenda: O modelo de Atkinson-Shiffrin, redesenhado.
-  lado: direita        # onde fica a IMAGEM (padrão: direita)
+  lado: direita        # onde fica a IMAGEM: direita (padrão) | esquerda | cheia
   ajuste: contain      # contain (padrão, mostra a figura inteira) | cover
   ---
 
@@ -17,6 +17,10 @@
 
   `rotulo` numera a figura ("Fig. 2", "Quadro 1"). Vale a pena quando a aula
   volta a ela depois — "lembram da Fig. 2?" é mais barato que repetir o slide.
+
+  `lado: cheia` é para o slide em que a figura **é** o slide: ela ocupa a largura
+  toda e o texto (se houver) vira uma faixa curta em cima. Sem texto, a coluna de
+  comentário do modo lado a lado ficaria vazia e a figura, espremida à toa.
 
   O campo se chama `imagem` e não `src` de propósito: `src` é reservado pelo Slidev
   (importa outro .md) e um slide que o usasse para imagem sumiria do deck, sem erro.
@@ -30,7 +34,7 @@ const props = withDefaults(defineProps<{
   imagem?: string
   legenda?: string
   rotulo?: string
-  lado?: 'direita' | 'esquerda'
+  lado?: 'direita' | 'esquerda' | 'cheia'
   ajuste?: 'contain' | 'cover'
 }>(), {
   lado: 'direita',
@@ -66,6 +70,23 @@ const arquivo = asset(props.imagem)
    para quem lê com leitor de tela. */
 .ds-figura.img-esquerda .texto {
   order: 2;
+}
+
+/* `cheia` — uma coluna só: o texto (quando existe) é uma faixa de altura
+   automática em cima, e a figura fica com todo o resto. A faixa some sozinha
+   quando o slide não tem texto: um `<Fonte>` é absoluto e não ocupa linha. */
+.ds-figura.img-cheia {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: var(--ds-space-4);
+  align-items: stretch;
+}
+
+/* Com a figura ocupando toda a altura, a legenda encosta no pé do slide — onde
+   o `<Fonte>`, que é `position: absolute`, também mora. Só nesse caso o slide
+   abre espaço para os dois. */
+.ds-figura.img-cheia:has(.ds-fonte) {
+  padding-bottom: 4.4rem;
 }
 
 /* Grade de duas faixas — imagem, legenda — em vez de flex em coluna, e a faixa da

@@ -30,7 +30,9 @@ const CAMPOS_RESERVADOS = [
 
 const RE_ARQUIVO_AULA = /^aula-\d{2,}-[a-z0-9]+(-[a-z0-9]+)*\.md$/
 const RE_DATA = /^\d{4}-\d{2}-\d{2}$/
-const RE_ASSET = /(?<![\w.@])\/[\w\-./]+\.(?:png|jpe?g|gif|svg|webp|avif|mp4|webm|pdf)/gi
+// O `:` e o `/` no lookbehind excluem URL externa (`https://cdn…`, `//cdn…`): ela nao e
+// asset local, e `asset()` tambem a deixa passar intacta. Ver aulas/lib/asset.ts.
+const RE_ASSET = /(?<![\w.@:/])\/[\w\-./]+\.(?:png|jpe?g|gif|svg|webp|avif|mp4|webm|pdf)/gi
 const RE_TAG_COMPONENTE = /<([A-Z][A-Za-z0-9]*)/g
 
 /** Tira código, comentários e blocos <style> antes de procurar tag ou caminho de imagem. */

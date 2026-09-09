@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 580" role="img" aria-label="Mapa dos tipos de atencao">
+  <title>O mapa dos tipos de atenção</title>
+  <desc>A atencao dividida por tres criterios independentes: pela natureza (voluntaria ou involuntaria), pela operacionalizacao (seletiva, sustentada, alternada, dividida) e pelo foco (externo ou interno).</desc>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
+
+    <!-- raiz -->
+    <rect x="350" y="24" width="180" height="52" rx="10" fill="#1e1c2b"/>
+    <text x="440" y="57" font-size="22" font-weight="700" text-anchor="middle" fill="#faf9f6">ATENÇÃO</text>
+
+    <!-- conectores -->
+    <g stroke="#605d75" stroke-width="2.5" fill="none">
+      <path d="M440 76 L440 100"/>
+      <path d="M150 100 L730 100"/>
+      <path d="M150 100 L150 128"/>
+      <path d="M440 100 L440 128"/>
+      <path d="M730 100 L730 128"/>
+    </g>
+
+    <!-- ===== coluna 1: natureza ===== -->
+    <text x="150" y="150" font-size="13" font-weight="700" text-anchor="middle" fill="#605d75" letter-spacing="1.2">PELA NATUREZA</text>
+    <g stroke="#4b3ba6" stroke-width="2.5">
+      <rect x="34" y="176" width="232" height="86" rx="9" fill="#4b3ba6" fill-opacity="0.07"/>
+      <rect x="34" y="286" width="232" height="86" rx="9" fill="#4b3ba6" fill-opacity="0.07"/>
+    </g>
+    <text x="150" y="206" font-size="18" font-weight="700" text-anchor="middle" fill="#4b3ba6">voluntária</text>
+    <text x="150" y="230" font-size="14" text-anchor="middle" fill="#605d75">seleção ativa e deliberada</text>
+    <text x="150" y="250" font-size="14" text-anchor="middle" fill="#605d75">processamento controlado</text>
+    <text x="150" y="316" font-size="18" font-weight="700" text-anchor="middle" fill="#4b3ba6">involuntária</text>
+    <text x="150" y="340" font-size="14" text-anchor="middle" fill="#605d75">puxada pelo estímulo</text>
+    <text x="150" y="360" font-size="14" text-anchor="middle" fill="#605d75">processamento automático</text>
+
+    <!-- ===== coluna 2: operacionalizacao ===== -->
+    <text x="440" y="150" font-size="13" font-weight="700" text-anchor="middle" fill="#a84a1a" letter-spacing="1.2">PELA OPERACIONALIZAÇÃO</text>
+    <g stroke="#a84a1a" stroke-width="2.5">
+      <rect x="316" y="170" width="248" height="52" rx="9" fill="#a84a1a" fill-opacity="0.10"/>
+      <rect x="316" y="232" width="248" height="52" rx="9" fill="#a84a1a" fill-opacity="0.10"/>
+      <rect x="316" y="294" width="248" height="52" rx="9" fill="#a84a1a" fill-opacity="0.10"/>
+      <rect x="316" y="356" width="248" height="52" rx="9" fill="#a84a1a" fill-opacity="0.10"/>
+    </g>
+    <g text-anchor="start">
+      <text x="336" y="194" font-size="18" font-weight="700" fill="#a84a1a">1 · seletiva</text>
+      <text x="336" y="213" font-size="13.5" fill="#605d75">privilegiar um estímulo entre outros</text>
+      <text x="336" y="256" font-size="18" font-weight="700" fill="#a84a1a">2 · sustentada</text>
+      <text x="336" y="275" font-size="13.5" fill="#605d75">manter o foco ao longo do tempo</text>
+      <text x="336" y="318" font-size="18" font-weight="700" fill="#a84a1a">3 · alternada</text>
+      <text x="336" y="337" font-size="13.5" fill="#605d75">sair de um foco e entrar em outro</text>
+      <text x="336" y="380" font-size="18" font-weight="700" fill="#a84a1a">4 · dividida</text>
+      <text x="336" y="399" font-size="13.5" fill="#605d75">duas tarefas ao mesmo tempo</text>
+    </g>
+
+    <!-- ===== coluna 3: foco ===== -->
+    <text x="730" y="150" font-size="13" font-weight="700" text-anchor="middle" fill="#605d75" letter-spacing="1.2">PELO FOCO</text>
+    <g stroke="#4b3ba6" stroke-width="2.5">
+      <rect x="614" y="176" width="232" height="86" rx="9" fill="#4b3ba6" fill-opacity="0.07"/>
+      <rect x="614" y="286" width="232" height="86" rx="9" fill="#4b3ba6" fill-opacity="0.07"/>
+    </g>
+    <text x="730" y="206" font-size="18" font-weight="700" text-anchor="middle" fill="#4b3ba6">externo</text>
+    <text x="730" y="230" font-size="14" text-anchor="middle" fill="#605d75">o que chega pelos sentidos</text>
+    <text x="730" y="250" font-size="14" text-anchor="middle" fill="#605d75">= percepção seletiva</text>
+    <text x="730" y="316" font-size="18" font-weight="700" text-anchor="middle" fill="#4b3ba6">interno</text>
+    <text x="730" y="340" font-size="14" text-anchor="middle" fill="#605d75">memórias, cálculos, pensamento</text>
+    <text x="730" y="360" font-size="14" text-anchor="middle" fill="#605d75">= cognição seletiva</text>
+
+    <!-- rodape -->
+    <line x1="34" y1="444" x2="846" y2="444" stroke="#e6e2dc" stroke-width="2"/>
+    <text x="34" y="478" font-size="16" font-weight="700">Os três critérios são independentes — não são três listas alternativas da mesma coisa.</text>
+    <text x="34" y="506" font-size="15" fill="#605d75">Uma mesma situação recebe uma classificação em cada coluna: procurar o nome de alguém na agenda do celular é</text>
+    <text x="34" y="528" font-size="15" fill="#605d75">atenção voluntária, seletiva e de foco externo. Lembrar esse nome sem a agenda é voluntária, sustentada e interna.</text>
+    <text x="34" y="562" font-size="14" fill="#605d75">Esquema autoral, montado a partir de Lima (2005).</text>
+  </g>
+</svg>

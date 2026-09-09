@@ -114,7 +114,7 @@ Vão no campo `layout:` do frontmatter do slide. Os campos de cada um viram prop
 | `destaque` | uma frase sozinha na tela: a pergunta que abre a discussão, a tese, o número | `kicker` `title` `fonte` `tipo` |
 | `comparacao` | dois conceitos que **se opõem**, lado a lado | `kicker` `title` `esquerda` `direita` `pergunta` + slots `::esquerda::` `::direita::` |
 | `atividade` | o slide em que a turma para de ouvir e faz | `kicker` `title` `tempo` `formato` `passos[]` `entrega` |
-| `figura` | quando a imagem **é** o argumento e o texto comenta | `imagem` `rotulo` `legenda` `lado` `ajuste` |
+| `figura` | quando a imagem **é** o argumento e o texto comenta | `imagem` `rotulo` `legenda` `lado` (`direita`/`esquerda`/`cheia`) `ajuste` |
 | `fecho` | o último slide: o que fica, o que vem | `kicker` `title` `pontos[]` `proximo` `leitura` |
 
 Os layouts do próprio Slidev continuam valendo: `default`, `center`, `two-cols`,
