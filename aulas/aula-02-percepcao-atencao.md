@@ -488,12 +488,6 @@ estímulos, **durante um período de tempo**.
 A queda ao longo do tempo não é falta de interesse — é uma propriedade do sistema.
 
 </Cartao>
-<Cartao rotulo="como se mede" titulo="Teste de Performance Contínua">
-
-Sessão longa, alvos raros, uma resposta a cada alvo: <mark>a medida é em minutos,
-não em acertos</mark>.
-
-</Cartao>
 </Grade>
 
 <!--
