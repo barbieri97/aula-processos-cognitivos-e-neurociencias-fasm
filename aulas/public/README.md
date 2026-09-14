@@ -46,6 +46,14 @@ Nome no padrão `aula-NN-<assunto>`, para dar para apagar tudo de uma aula de um
 | `aula-02-redes-atencao.svg` | esquema 10 — rede de atenção dorsal e ventral |
 | `aula-02-negligencia.svg` | esquema 11 — relógio, bissecção de linha e cancelamento |
 | `aula-02-busca-visual.svg` | esquema 12 — busca por traço isolado × por conjunção |
+| `aula-03-taxonomia-memoria.svg` | esquema 1 — a memória por duração, por acesso consciente e por conteúdo |
+| `aula-03-memoria-operacional.svg` | esquema 2 — executivo central, os três subsistemas e os sistemas cristalizados |
+| `aula-03-quatro-processos.svg` | esquema 3 — codificação, armazenamento, consolidação, evocação e o arco da reconsolidação |
+| `aula-03-consolidacao-sistemica.svg` | esquema 4 — o traço migrando do hipocampo para o córtex ao longo do tempo |
+| `aula-03-hm-lesao.svg` | esquema 5 — corte coronal com a região retirada na cirurgia de H.M., dos dois lados |
+| `aula-03-neuroanatomia-memoria.svg` | esquema 6 — cada estrutura ao lado do sistema de memória que sustenta |
+| `aula-03-ltp-ltd.svg` | esquema 7 — a mesma sinapse potenciada e deprimida |
+| `aula-03-amnesias.svg` | esquema 8 — anterógrada e retrógrada no eixo do tempo, com o gradiente de Ribot |
 
 Os `.png` da aula 01 são recortes das figuras de **Eysenck & Keane, _Manual de psicologia
 cognitiva_, 7ª ed. (Artmed, 2017), cap. 1** — a bibliografia da disciplina —, extraídos do
@@ -61,6 +69,11 @@ Os doze `aula-02-*.svg` são **autorais**: foram desenhados para esta aula a par
 Eysenck & Keane (cap. 2, 3 e 5) e de Lima (2005), e não reproduzem figura de nenhum dos dois.
 Os que mostram anatomia dizem "esquema" na própria legenda — as posições são aproximadas e
 servem para localizar, não para estudar neuroanatomia.
+
+Os oito `aula-03-*.svg` também são autorais, desenhados a partir do material da
+disciplina (p. 80–101) e das fontes citadas em cada slide. O esquema da lesão de H.M. e o
+da neuroanatomia dizem "esquema" na legenda pela mesma razão que os da aula 02: as posições
+são aproximadas e servem para localizar, não para estudar neuroanatomia.
 
 ### Como recortar uma figura nova de um PDF
 
