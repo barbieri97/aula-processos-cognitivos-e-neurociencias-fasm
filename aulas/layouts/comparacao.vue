@@ -78,13 +78,19 @@ const title = props.frontmatter?.title
   margin-bottom: var(--ds-space-5);
 }
 
+/* `flex: 1 0 auto` e nao `flex: 1`: com `flex-shrink: 1` (o padrao) esta faixa
+   encolhia abaixo da altura do proprio conteudo, e as colunas passavam POR CIMA
+   do rodape da `pergunta` em vez de transbordar o slide. Sobrepor passa
+   despercebido ate a projecao, e o `npm run overflow` nao o enxerga — ele mede
+   transbordo, nao sobreposicao. Mesma guarda do `.topo` em fecho.vue; ver
+   docs/design-system.md, "Item de flex encolhe abaixo do proprio conteudo". */
 .colunas {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: var(--ds-space-5);
   align-items: start;
   min-height: 0;
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 /* `--cor` distingue os dois lados: índigo de um, terracota do outro. É a mesma
