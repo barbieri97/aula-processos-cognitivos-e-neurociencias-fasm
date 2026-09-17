@@ -28,9 +28,9 @@
       <path d="M42 342 H 56"/>
     </g>
     <rect x="56" y="278" width="164" height="36" rx="7" fill="#1e1c2b" fill-opacity="0.04" stroke="#605d75" stroke-width="1.5"/>
-    <text x="138" y="301" font-size="14" text-anchor="middle" fill="#605d75">armazenamento breve</text>
+    <text x="138" y="301" font-size="14" text-anchor="middle" fill="#605d75">curto prazo</text>
     <rect x="56" y="324" width="164" height="36" rx="7" fill="#1e1c2b" fill-opacity="0.04" stroke="#605d75" stroke-width="1.5"/>
-    <text x="138" y="347" font-size="14" text-anchor="middle" fill="#605d75">manipulação ativa</text>
+    <text x="138" y="347" font-size="14" text-anchor="middle" fill="#605d75">memória operacional</text>
 
     <!-- ===== ramo direito: longo prazo ===== -->
     <rect x="460" y="96" width="200" height="52" rx="9" fill="#1e1c2b" fill-opacity="0.05" stroke="#605d75" stroke-width="2.5"/>

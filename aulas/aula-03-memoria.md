@@ -24,9 +24,9 @@ layout: default
 # Para onde vamos
 
 <Objetivos :itens="[
-  'Distinguir os sistemas de memória pela duração, pelo conteúdo e pelo acesso consciente',
-  'Descrever os quatro processos da memória e identificar em qual deles uma falha ocorreu',
-  'Relacionar cada sistema de memória às estruturas cerebrais que o sustentam',
+  'Compreender os sistemas da memória',
+  'Descrever os quatro processos da memória',
+  'Relacionar estruturas cerebrais com a memória',
 ]" />
 
 ---
@@ -36,7 +36,6 @@ title: Quatro paradas
 itens:
   - {
       tema: "Os sistemas de memória",
-      desc: "quantas memórias cabem dentro da palavra memória"
     }
   - {
       tema: "Os quatro processos",
@@ -44,7 +43,7 @@ itens:
     }
   - {
       tema: "Onde a memória acontece",
-      desc: "o caso H.M. e o circuito de cada sistema"
+      desc: "o caso H.M."
     }
   - {
       tema: "Quando a memória falha",
@@ -57,7 +56,7 @@ layout: secao
 numero: "01"
 kicker: Parte 1
 title: Os sistemas de memória
-note: A palavra é uma só. Os sistemas que ela nomeia têm duração, conteúdo e circuitos diferentes.
+note: Como os diferentes tipos de memória são divididos.
 ---
 
 ---
@@ -66,7 +65,7 @@ layout: default
 
 # Caso 1
 
-<Caso titulo="O código de seis dígitos" contexto="qualquer aplicativo, qualquer dia" pergunta="Por que o código some em segundos, e o número da sua casa, não?">
+<Caso titulo="O código de seis dígitos" pergunta="Por que o código some em segundos, e o número da sua casa, não?">
 
 O aplicativo manda um código de verificação. Você lê, troca de tela, digita os
 seis dígitos. Trinta segundos depois, não faria ideia de quais eram. No mesmo
@@ -74,8 +73,6 @@ dia, você diz de cor o número da sua casa, que ninguém lhe pediu para decorar
 
 </Caso>
 
-As duas coisas foram guardadas — mas não pelo mesmo sistema, nem pelo mesmo
-tempo, nem com o mesmo esforço.
 
 ---
 layout: default
@@ -83,7 +80,7 @@ layout: default
 
 # O que se chama de memória
 
-<Termo palavra="Memória" ingles="memory" origem="taxonomia de Squire &amp; Kandel, adotada no material da disciplina">
+<Termo palavra="Memória" ingles="memory" origem="taxonomia de Squire &amp; Kandel">
 
 O conjunto de processos pelos quais uma informação é adquirida, mantida ao longo
 do tempo e recuperada quando necessário.
@@ -92,8 +89,7 @@ do tempo e recuperada quando necessário.
 
 O ponto de partida da aula é que memória <mark>não é uma faculdade única</mark>.
 É o nome de vários sistemas, que funcionam com regras diferentes e podem ser
-perdidos separadamente — e foi um paciente, em 1953, que tornou isso
-impossível de ignorar.
+perdidos separadamente.
 
 <!--
 Sistema, aqui, no sentido de conjunto de estruturas e operações que podem ser
@@ -118,15 +114,14 @@ kicker: Primeiro critério — a duração
 title: Curto prazo × operacional
 esquerda: Memória de curto prazo
 direita: Memória operacional
-pergunta: O que muda é se a informação fica <span class="ds-em">parada</span> ou é <span class="ds-em">manipulada</span> enquanto está lá.
+pergunta: O que muda é se a informação fica <span class="ds-em">parada</span> ou é <span class="ds-em">manipulada</span>.
 ---
 
 ::esquerda::
 
 - **Armazenamento breve**: mantém pouca informação por segundos a poucos minutos
 - É o que sustenta repetir um número até anotá-lo
-- Capacidade limitada — e é sobre esse limite que corre a discussão mais antiga
-  da área
+- Capacidade limitada
 
 ::direita::
 
@@ -134,54 +129,7 @@ pergunta: O que muda é se a informação fica <span class="ds-em">parada</span>
 - É o que sustenta acompanhar uma frase longa ou fazer uma conta de cabeça
 - Tem partes distintas, uma para cada tipo de material
 
----
-layout: figura
-imagem: /aula-03-memoria-operacional.svg
-rotulo: Esquema 2
-legenda: "O executivo central e os três subsistemas, cada um trocando informação
-  com um sistema de longo prazo. Esquema autoral, a partir de Baddeley (2000)."
-lado: direita
-ajuste: contain
----
 
-# O modelo de memória operacional
-
-Um **executivo central** distribui a atenção entre três subsistemas: a **alça
-fonológica**, para som e fala; o **esboço visuoespacial**, para imagem e espaço;
-e o **buffer episódico**, acrescentado depois, que junta os dois códigos num
-episódio só.
-
-A divisão não é decorativa: repetir números em voz alta atrapalha uma tarefa
-verbal e <mark>não atrapalha uma tarefa espacial</mark>.
-
-<!--
-Buffer episódico — em português também aparece como retentor episódico. Foi
-proposto por Baddeley em 2000, 26 anos depois da primeira versão do modelo.
--->
-
----
-layout: default
----
-
-# A capacidade do armazenamento breve
-
-<MitoFato
-  mito="A memória de curto prazo guarda 7 ± 2 itens"
-  fato="O 7 ± 2 conta itens já agrupados. Quando o agrupamento é bloqueado, o limite cai para cerca de 4">
-
-Cowan (2001) reuniu tarefas que impedem o agrupamento e encontrou um limite de
-**três a cinco** unidades.
-
-</MitoFato>
-
-`9 8 2 1 3 4 7 6` são oito itens; `98 21 34 76` são quatro.
-<span class="ds-em">A capacidade não mudou — mudou o tamanho do item.</span>
-
-<!--
-Agrupamento (chunking) — reunir elementos soltos numa unidade única de
-significado, que passa a ocupar uma só posição na capacidade. Miller publicou o
-7 mais ou menos 2 em 1956, e o apresentou como estimativa, não como constante.
--->
 
 ---
 layout: comparacao
@@ -247,7 +195,6 @@ kicker: Terceiro critério — o conteúdo
 title: Episódica × semântica
 esquerda: Memória episódica
 direita: Memória semântica
-pergunta: "A mesma aula produz as duas: <span class='ds-em'>o que foi dito</span> e <span class='ds-em-2'>a quarta-feira em que foi dito</span>."
 ---
 
 ::esquerda::
@@ -270,7 +217,7 @@ layout: default
 
 <Checagem
   rotulo="Checagem 1"
-  pergunta="Uma pessoa aprendeu a andar de skate na adolescência. Hoje, anos depois, executa as manobras sem errar — e não consegue descrever a ninguém como faz. Que sistema de memória sustenta esse desempenho?"
+  pergunta="Uma pessoa aprendeu a andar de skate na adolescência. Hoje, anos depois, executa as manobras sem errar e não consegue descrever a ninguém como faz. Que sistema de memória sustenta esse desempenho?"
   :alternativas="[
     'Memória episódica, porque ela reviveu as situações em que aprendeu',
     'Memória semântica, porque ela retém o conhecimento sobre o skate',
@@ -316,7 +263,7 @@ lado: cheia
 ajuste: contain
 ---
 
-<Fonte>O arco de volta é o que impede tratar a memória como arquivo: evocar não é abrir um arquivo, é reabrir uma obra.</Fonte>
+<Fonte>O arco de volta é o que impede tratar a memória como arquivo: evocar não é abrir um arquivo, é criar uma obra.</Fonte>
 
 ---
 layout: default
@@ -324,7 +271,7 @@ layout: default
 
 # 1. Codificação
 
-<Termo palavra="Codificação" ingles="encoding" origem="material da disciplina">
+<Termo palavra="Codificação" ingles="encoding">
 
 Processo pelo qual uma informação nova é adquirida e transformada num formato
 que o sistema de memória consegue reter.
@@ -354,21 +301,14 @@ layout: default
 
 # 2. Armazenamento
 
-<Termo palavra="Armazenamento" ingles="storage" origem="material da disciplina">
+<Termo palavra="Armazenamento" ingles="storage">
 
 Mecanismos e locais pelos quais a informação codificada é retida como memória de
 longa duração.
 
 </Termo>
 
-A capacidade é vastíssima: o problema nunca é falta de espaço.
-
-<Nota titulo="O que realmente limita">
-
-Um registro recente está **armazenado e ainda instável** — existe, e é fácil de
-perder. Estabilizá-lo é o trabalho do processo seguinte.
-
-</Nota>
+A capacidade é ilimitada, mas ainda instável.
 
 ---
 layout: default
@@ -396,13 +336,13 @@ layout: default
     { nome: 'Dros, 2015', pontos: [[20, 47.2], [60, 37.3], [540, 27.6], [1440, 31.7], [2880, 23.0], [8640, 16.8], [44640, 4.1]] },
   ]" />
 
-<Fonte>Dados de Murre &amp; Dros (2015), Tabela 3. A medida é a <em>economia</em>: quanto menos tempo a reaprendizagem custa, mais restou do aprendizado anterior.</Fonte>
+<Fonte>Dados de Murre &amp; Dros (2015)</Fonte>
 
 ---
 layout: default
 ---
 
-# O que a curva mostra, e o que ela não mostra
+# O que a curva mostra
 
 <Pessoa nome="Hermann Ebbinghaus" papel="1850–1909, psicólogo alemão" foto="https://upload.wikimedia.org/wikipedia/commons/9/92/Ebbinghaus2.jpg">
 
@@ -411,16 +351,7 @@ primeira vez que um processo mental superior virou curva.
 
 </Pessoa>
 
-A perda é **rápida no começo e lenta depois** — não é uma reta. Mas a réplica de
-2015, feita com o mesmo método por um só participante, acompanha a curva até dois
-dias e despenca aos 31.
-
-<Nota tipo="alerta" titulo="Por que a diferença importa">
-
-Uma curva com **n = 1** descreve um participante, não a espécie. A forma da
-queda replicou; o valor em cada ponto, não. Nas suas anotações, guarde a forma.
-
-</Nota>
+A perda é **rápida no começo e lenta depois** não é uma reta.
 
 ---
 layout: figura
@@ -434,7 +365,7 @@ ajuste: contain
 
 # 3. Consolidação
 
-<Termo palavra="Consolidação" ingles="consolidation" origem="material da disciplina">
+<Termo palavra="Consolidação" ingles="consolidation">
 
 Processo que transforma um registro ainda lábil numa forma estável, resistente à
 interferência.
@@ -450,32 +381,7 @@ Lábil — instável, fácil de alterar ou perder. Interferência: o efeito de u
 aprendizagem nova sobre uma memória recente ainda não estabilizada.
 -->
 
----
-layout: default
----
 
-# Sono: o que a evidência sustenta
-
-<Experimento
-  nome="Reativação dirigida da memória durante o sono"
-  autoria="Hu e colaboradores, 2020"
-  pergunta="Uma pista associada ao aprendizado, reapresentada no sono, melhora a retenção?"
-  metodo="Meta-análise de 91 experimentos, 2.004 participantes"
-  achado="Efeito pequeno e consistente (g = 0,29), presente no sono NREM e ausente no REM e na vigília." />
-
-<Nota tipo="alerta" titulo="Onde a evidência é menos firme do que se costuma dizer">
-
-Cordi e Rasch (2020) revisam replicações falhas e concluem que o efeito é
-**menor, mais dependente da tarefa e menos ligado às ondas lentas** do que a
-versão corrente supõe.
-
-</Nota>
-
-<!--
-NREM — sono sem movimentos oculares rápidos (non-rapid eye movement); inclui o
-sono de ondas lentas. REM — sono com movimentos oculares rápidos. g de Hedges:
-medida de tamanho de efeito; 0,2 é pequeno, 0,5 médio, 0,8 grande.
--->
 
 ---
 layout: default
@@ -483,7 +389,7 @@ layout: default
 
 # 4. Evocação
 
-<Termo palavra="Evocação" ingles="retrieval" origem="material da disciplina">
+<Termo palavra="Evocação" ingles="retrieval">
 
 Processo pelo qual a informação armazenada é recuperada e trazida de volta à
 consciência.
@@ -502,12 +408,9 @@ Duas propriedades que a aula toda vai usar:
 ---
 layout: atividade
 title: Recuperação sem consulta
-tempo: 6 min
-formato: individual, depois em duplas
 passos:
-  - "Feche o caderno e escreva, em três minutos, tudo o que lembrar da Parte 1"
+  - "Feche o caderno e escreva tudo o que lembrar sobre a memória"
   - "Compare com a dupla ao lado e marque o que só um dos dois lembrou"
-entrega: A lista do que faltou nos dois — é ela que diz o que reler hoje à noite
 ---
 
 O que vocês acabaram de fazer tem nome, tem mecanismo e tem tamanho de efeito:
@@ -529,9 +432,6 @@ Sparrow e colaboradores (2011): a expectativa de poder consultar depois já muda
 que é codificado. O registro não desaparece — desloca-se de *o quê* para *onde*.
 
 </MitoFato>
-
-Skulmowski (2023) aponta o custo escondido: quem descarrega retém a essência
-<span class="ds-em-2">com a impressão de ter retido o conteúdo</span>.
 
 <!--
 Descarga cognitiva (cognitive offloading) — usar o ambiente ou um dispositivo
@@ -577,7 +477,7 @@ layout: secao
 numero: "03"
 kicker: Parte 3
 title: Onde a memória acontece
-note: Um paciente operado em 1953 separou, de uma vez, o que a teoria ainda discutia.
+note: O caso HM.
 ---
 
 ---
@@ -594,8 +494,6 @@ diminuíram — e Henry deixou de formar memórias novas.
 
 </Caso>
 
-Ele viveu mais 55 anos assim, e foi acompanhado o tempo todo. Até morrer, em
-2008, era conhecido apenas como **H.M.**
 
 <!--
 Lobo temporal medial — a face interna do lobo temporal, que abriga hipocampo,
@@ -603,45 +501,20 @@ amígdala e os córtices entorrinal, perirrinal e parahipocampal.
 -->
 
 ---
-layout: iframe-right
+layout: iframe
 url: https://www.youtube.com/embed/W0TTQroCjoQ
 ---
 
-# O caso em vídeo
-
-*Amnesiac*, curta sobre o caso de Henry Molaison, legendado em português.
-
-<Nota titulo="O que observar">
-
-Duas coisas: a **repetição** das mesmas perguntas em poucos minutos, e a
-preservação da linguagem, da inteligência e da personalidade. Não é um quadro de
-deterioração global — é uma falha específica.
-
-</Nota>
-
-<Fonte>Canal: Davi Drieskens. O vídeo só roda no deck ao vivo ou no site; ele não aparece no PDF baixado.</Fonte>
-
-<!--
-O curta é uma reconstituição com atores, não registro clínico de arquivo: vale
-dizer isso à turma antes de exibir, para que o vídeo não seja tomado como
-documento do caso.
--->
-
 ---
 layout: figura
-imagem: /aula-03-hm-lesao.svg
-rotulo: Esquema 5
-legenda: "Corte coronal esquemático: a porção medial dos dois lobos temporais,
-  hachurada, corresponde à região retirada. Esquema autoral — as posições são
-  aproximadas."
+imagem: /cerebro-hm.png
 lado: direita
 ajuste: contain
 ---
 
 # A cirurgia de 1953
 
-A ressecção foi **bilateral**: a mesma região saiu dos dois lados. É isso que
-torna o caso decisivo — com um lado preservado, o outro compensaria, e não
+A ressecção foi **bilateral**: a mesma região saiu dos dois lados. Com um lado preservado, o outro compensaria, e não
 haveria o que observar.
 
 O que saiu: amígdala, córtex entorrinal, boa parte do perirrinal e a porção
@@ -651,27 +524,6 @@ anterior do hipocampo.
 Ressecção — retirada cirúrgica de um segmento de tecido. Bilateral: nos dois
 hemisférios.
 -->
-
----
-layout: default
----
-
-# O que a autópsia mostrou
-
-<Experimento
-  nome="Reconstrução do encéfalo de H.M."
-  autoria="Annese e colaboradores, 2014"
-  pergunta="O que exatamente a cirurgia de 1953 retirou?"
-  metodo="Cortes histológicos do encéfalo inteiro e reconstrução 3D, após a morte em 2008"
-  achado="Saíram a amígdala, quase todo o entorrinal e a metade anterior do hipocampo — mas cerca de 2 cm da cauda do hipocampo permaneceram." />
-
-<Nota titulo="Por que vale corrigir">
-
-Dizer que removeram o hipocampo de H.M. é impreciso: saiu **metade dele**, e a
-amnésia foi profunda. A pergunta se desloca de quanto tecido saiu para **qual
-circuito** foi interrompido.
-
-</Nota>
 
 ---
 layout: default
@@ -731,8 +583,7 @@ ajuste: contain
 Descer da estrutura para a sinapse responde a pergunta que faltava: **o que, no
 tecido, muda quando alguém aprende?**
 
-A resposta é a eficiência da transmissão entre dois neurônios — e ela varia nos
-dois sentidos.
+A resposta é a eficiência da transmissão entre dois neurônios.
 
 <!--
 Sinapse — a região de contato funcional entre dois neurônios. Espinha
@@ -746,7 +597,6 @@ kicker: A escala celular
 title: LTP × LTD
 esquerda: Potenciação de longa duração
 direita: Depressão de longa duração
-pergunta: Os dois são <span class="ds-em">o mesmo parâmetro movido em sentidos opostos</span>.
 ---
 
 ::esquerda::
@@ -754,8 +604,6 @@ pergunta: Os dois são <span class="ds-em">o mesmo parâmetro movido em sentidos
 - **Aumento duradouro** da eficiência de uma sinapse, por estimulação repetida
   e intensa
 - A candidata mais aceita a **base celular da aprendizagem**
-- Bliss e Lømo (1973): em **15 de 18** coelhos, resposta potenciada de 30
-  minutos a 10 horas
 
 ::direita::
 
@@ -809,18 +657,15 @@ layout: secao
 numero: "04"
 kicker: Parte 4
 title: Quando a memória falha
-note: As falhas não são defeitos de fabricação. Quase todas são o preço de alguma coisa que o sistema faz bem.
+note: A adaptação tem o seu custo.
 ---
 
 ---
 layout: atividade
 title: Leia e memorize
-tempo: 2 min
-formato: individual, caderno fechado
 passos:
   - "Leia a lista abaixo em silêncio, uma vez, em trinta segundos"
   - "Feche o caderno, o celular e os olhos por quinze segundos"
-entrega: Nada por escrito — a verificação vem no slide seguinte
 ---
 
 cama · repouso · acordar · cansado · sonho · despertar · cochilo · cobertor ·
@@ -832,7 +677,7 @@ layout: default
 
 <Checagem
   rotulo="Teste"
-  pergunta="Qual destas palavras estava na lista que você acabou de ler?"
+  pergunta="Qual destas palavras não estava na lista que você acabou de ler?"
   :alternativas="[
     'travesseiro',
     'dormir',
@@ -849,7 +694,7 @@ layout: default
 <Nota tipo="ok" titulo="a. travesseiro">
 
 **dormir** não estava na lista. Se ela lhe pareceu familiar, o que aconteceu tem
-nome, procedimento e taxa conhecida — e não é falta de atenção.
+nome.
 
 </Nota>
 
@@ -865,21 +710,16 @@ comparável à das palavras de fato apresentadas.
 
 ---
 layout: destaque
-kicker: A tese da Parte 4
 title: A memória não guarda registros — ela os <span class="ds-em-2">reconstrói</span>
 tipo: tese
 fonte: Schacter (1999)
 ---
 
-A turma inteira "lembrou" de uma palavra que ninguém disse. Isso não aconteceu
-apesar de o sistema funcionar bem: aconteceu **porque** ele extrai o sentido geral
-em vez de arquivar cada item. As falhas a seguir são todas dessa família.
-
 ---
 layout: default
 ---
 
-# Os sete pecados: três formas de esquecer
+# Os sete tipos de falha da memória
 
 <Grade :cols="3">
 <Cartao rotulo="01" titulo="Transitoriedade">
@@ -900,13 +740,6 @@ Incapacidade temporária de evocar algo que está armazenado — a ponta da lín
 </Cartao>
 </Grade>
 
-<Nota titulo="Três processos diferentes, um mesmo relato">
-
-O paciente diz "esqueci" nos três casos. Distingui-los é o trabalho clínico: a
-transitoriedade é do armazenamento, a distração é da codificação e o bloqueio é
-da evocação.
-
-</Nota>
 
 ---
 layout: default
@@ -968,20 +801,11 @@ depoimento da testemunha.
 ---
 layout: figura
 imagem: /aula-03-amnesias.svg
+lado: cheia
 rotulo: Esquema 8
 legenda: "As duas amnésias definidas pelo momento da lesão. Esquema autoral."
-lado: direita
-ajuste: contain
 ---
 
-# Quando o eixo do tempo se quebra
-
-Na **anterógrada**, o passado fica e o presente não se fixa — é o quadro de H.M.,
-e a causa típica é dano hipocampal bilateral.
-
-Na **retrógrada**, perde-se o que era anterior à lesão, com **gradiente
-temporal**: o recente cai mais que o antigo. Comum após traumatismo
-cranioencefálico, AVC ou eletroconvulsoterapia.
 
 <Fonte>O gradiente é a lei de Ribot, e ele é a previsão que a consolidação sistêmica faz: memória antiga já migrou para o córtex, e por isso resiste.</Fonte>
 
@@ -994,48 +818,9 @@ eletroconvulsoterapia.
 layout: default
 ---
 
-# Duas apresentações clínicas
-
-<Grade :cols="2">
-<Cartao rotulo="transitória" titulo="Amnésia global transitória">
-
-Início súbito de amnésia anterógrada, com perguntas repetidas e às vezes um
-componente retrógrado. Dura **até 24 horas** e não compromete outras funções
-neurológicas. O prognóstico cognitivo é bom e a recorrência é baixa.
-
-</Cartao>
-<Cartao rotulo="progressiva" titulo="Doença de Alzheimer" destaque>
-
-O córtex entorrinal está entre os primeiros sítios a acumular emaranhados
-neurofibrilares — a porta de entrada do hipocampo. É por isso que a memória
-episódica recente é a **primeira** a ceder, e não a linguagem ou a habilidade
-motora.
-
-</Cartao>
-</Grade>
-
-<Fonte>Amnésia global transitória: Arena &amp; Rabinstein (2015). Distribuição precoce dos emaranhados no córtex entorrinal: Hanke &amp; Yilmazer-Hanke (1997); Barroeta-Espar e colaboradores (2018).</Fonte>
-
----
-layout: destaque
-kicker: Demência no Brasil — ELSI-Brasil, amostra nacional
-title: <span class="ds-em-2">5,8%</span> têm demência — e <span class="ds-em-2">77%</span> nunca foram diagnosticados
-tipo: dado
-fonte: Bertola e colaboradores (2023), 5.249 brasileiros de 60 anos ou mais
----
-
-Outros **8,1%** têm comprometimento cognitivo sem demência.
-
-A prevalência vai de 3,2% entre 60 e 64 anos a 42,8% acima dos 90 — e de 2,1%
-entre quem tem curso superior a **16,5%** entre não alfabetizados.
-
----
-layout: default
----
-
 <Checagem
   rotulo="Checagem 4"
-  pergunta="Uma testemunha, depois de ouvir outra pessoa comentar que havia um carro azul na cena, passa a relatar com segurança um carro azul que não existia. Qual dos sete pecados descreve melhor o ocorrido?"
+  pergunta="Uma testemunha, depois de ouvir outra pessoa comentar que havia um carro azul na cena, passa a relatar com segurança um carro azul que não existia. Qual das sete falhas descreve melhor o ocorrido?"
   :alternativas="[
     'Bloqueio, porque ela não conseguiu acessar a cor verdadeira',
     'Viés, porque as crenças atuais dela distorceram o passado',
@@ -1070,12 +855,10 @@ layout: fecho
 kicker: Fechando
 title: O que fica
 pontos:
-  - "Memória não é uma faculdade: são sistemas com durações e circuitos diferentes"
-  - "Quatro processos — a pergunta útil é em qual deles a falha aconteceu"
-  - "Uma lesão separou implícita de explícita num paciente só"
-  - "A reconstrução é o mecanismo; a distorção é o preço dele"
-proximo: Aula 04 — linguagem e funções executivas
-leitura: Material da disciplina, p. 80–101; Schacter (1999)
+  - "Memória são sistemas com durações e circuitos diferentes"
+  - "Quatro processos para a memorização"
+  - "O caso HM"
+  - "A lembrança é reconstruida e as falhas acontecem na reconstrução"
 ---
 
 ---
