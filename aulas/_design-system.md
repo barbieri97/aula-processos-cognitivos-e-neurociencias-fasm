@@ -496,6 +496,33 @@ aprende o formato por repetição, que é o que vai cobrar dela no trabalho.
 <!-- Situação: <Referencia> para a bibliografia (o `capitulo` é o recorte que foi realmente pedido para ler); <Fonte> para o crédito de uma imagem ou de um dado dentro do slide. -->
 
 ---
+layout: default
+---
+
+# `<GraficoLinhas>` — dados com dois eixos
+
+<GraficoLinhas
+  escalaX="log"
+  :maxY="60"
+  sufixoY="%"
+  tituloY="economia na reaprendizagem"
+  descricao="Exemplo de duas séries numa escala logarítmica de tempo."
+  :rotulosX="[
+    { valor: 20, texto: '20 min' },
+    { valor: 1440, texto: '1 dia' },
+    { valor: 8640, texto: '6 dias' },
+    { valor: 44640, texto: '31 dias' },
+  ]"
+  :series="[
+    { nome: 'Ebbinghaus, 1885', pontos: [[20, 58.2], [1440, 33.7], [8640, 25.4], [44640, 21.1]] },
+    { nome: 'Dros, 2015', pontos: [[20, 47.2], [1440, 31.7], [8640, 16.8], [44640, 4.1]] },
+  ]" />
+
+<Fonte>O nome de cada série fica no fim da própria linha — sem legenda à parte, sem casamento cor-a-cor no meio da aula.</Fonte>
+
+<!-- Situação: <GraficoLinhas> é para DADOS — uma medida que varia ao longo de alguma coisa. O que é esquema (taxonomia, circuito, processo) continua sendo SVG em public/. Escalas e geometria vêm do d3; três séries é o teto. -->
+
+---
 layout: secao
 numero: "04"
 kicker: Parte 4

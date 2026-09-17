@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" role="img" aria-label="Taxonomia da memoria">
+  <title>A taxonomia da memória</title>
+  <desc>A memoria dividida em curto prazo (armazenamento breve e manipulacao ativa) e longo prazo, que por sua vez se divide em implicita (habilidades, pre-ativacao, condicionamento) e explicita (episodica, semantica).</desc>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
+
+    <!-- raiz -->
+    <rect x="380" y="8" width="120" height="44" rx="10" fill="#1e1c2b"/>
+    <text x="440" y="37" font-size="20" font-weight="700" text-anchor="middle" fill="#faf9f6">MEMÓRIA</text>
+
+    <!-- conectores raiz -->
+    <g stroke="#605d75" stroke-width="2.5" fill="none">
+      <path d="M440 52 V 74"/>
+      <path d="M120 74 H 560"/>
+      <path d="M120 74 V 96"/>
+      <path d="M560 74 V 96"/>
+    </g>
+
+    <!-- ===== ramo esquerdo: curto prazo ===== -->
+    <rect x="20" y="96" width="200" height="52" rx="9" fill="#1e1c2b" fill-opacity="0.05" stroke="#605d75" stroke-width="2.5"/>
+    <text x="120" y="128" font-size="18" font-weight="700" text-anchor="middle">curto prazo</text>
+
+    <g stroke="#605d75" stroke-width="2" fill="none">
+      <path d="M120 148 V 168"/>
+      <path d="M42 168 H 120"/>
+      <path d="M42 168 V 342"/>
+      <path d="M42 296 H 56"/>
+      <path d="M42 342 H 56"/>
+    </g>
+    <rect x="56" y="278" width="164" height="36" rx="7" fill="#1e1c2b" fill-opacity="0.04" stroke="#605d75" stroke-width="1.5"/>
+    <text x="138" y="301" font-size="14" text-anchor="middle" fill="#605d75">curto prazo</text>
+    <rect x="56" y="324" width="164" height="36" rx="7" fill="#1e1c2b" fill-opacity="0.04" stroke="#605d75" stroke-width="1.5"/>
+    <text x="138" y="347" font-size="14" text-anchor="middle" fill="#605d75">memória operacional</text>
+
+    <!-- ===== ramo direito: longo prazo ===== -->
+    <rect x="460" y="96" width="200" height="52" rx="9" fill="#1e1c2b" fill-opacity="0.05" stroke="#605d75" stroke-width="2.5"/>
+    <text x="560" y="128" font-size="18" font-weight="700" text-anchor="middle">longo prazo</text>
+
+    <g stroke="#605d75" stroke-width="2.5" fill="none">
+      <path d="M560 148 V 170"/>
+      <path d="M360 170 H 760"/>
+      <path d="M360 170 V 192"/>
+      <path d="M760 170 V 192"/>
+    </g>
+
+    <!-- implícita -->
+    <rect x="250" y="192" width="220" height="62" rx="9" fill="#a84a1a" fill-opacity="0.10" stroke="#a84a1a" stroke-width="2.5"/>
+    <text x="360" y="219" font-size="18" font-weight="700" text-anchor="middle" fill="#a84a1a">implícita</text>
+    <text x="360" y="240" font-size="13" text-anchor="middle" fill="#605d75">não declarativa</text>
+
+    <g stroke="#a84a1a" stroke-width="2" fill="none" stroke-opacity="0.7">
+      <path d="M360 254 V 268"/>
+      <path d="M272 268 H 360"/>
+      <path d="M272 268 V 388"/>
+      <path d="M272 296 H 286"/>
+      <path d="M272 342 H 286"/>
+      <path d="M272 388 H 286"/>
+    </g>
+    <rect x="286" y="278" width="184" height="36" rx="7" fill="#a84a1a" fill-opacity="0.06" stroke="#a84a1a" stroke-width="1.5" stroke-opacity="0.5"/>
+    <text x="378" y="301" font-size="14" text-anchor="middle" fill="#605d75">habilidades e hábitos</text>
+    <rect x="286" y="324" width="184" height="36" rx="7" fill="#a84a1a" fill-opacity="0.06" stroke="#a84a1a" stroke-width="1.5" stroke-opacity="0.5"/>
+    <text x="378" y="347" font-size="14" text-anchor="middle" fill="#605d75">pré-ativação</text>
+    <rect x="286" y="370" width="184" height="36" rx="7" fill="#a84a1a" fill-opacity="0.06" stroke="#a84a1a" stroke-width="1.5" stroke-opacity="0.5"/>
+    <text x="378" y="393" font-size="14" text-anchor="middle" fill="#605d75">condicionamento</text>
+
+    <!-- explícita -->
+    <rect x="650" y="192" width="220" height="62" rx="9" fill="#4b3ba6" fill-opacity="0.07" stroke="#4b3ba6" stroke-width="2.5"/>
+    <text x="760" y="219" font-size="18" font-weight="700" text-anchor="middle" fill="#4b3ba6">explícita</text>
+    <text x="760" y="240" font-size="13" text-anchor="middle" fill="#605d75">declarativa</text>
+
+    <g stroke="#4b3ba6" stroke-width="2" fill="none" stroke-opacity="0.7">
+      <path d="M760 254 V 268"/>
+      <path d="M672 268 H 760"/>
+      <path d="M672 268 V 342"/>
+      <path d="M672 296 H 686"/>
+      <path d="M672 342 H 686"/>
+    </g>
+    <rect x="686" y="278" width="184" height="36" rx="7" fill="#4b3ba6" fill-opacity="0.05" stroke="#4b3ba6" stroke-width="1.5" stroke-opacity="0.5"/>
+    <text x="778" y="301" font-size="14" text-anchor="middle" fill="#605d75">episódica</text>
+    <rect x="686" y="324" width="184" height="36" rx="7" fill="#4b3ba6" fill-opacity="0.05" stroke="#4b3ba6" stroke-width="1.5" stroke-opacity="0.5"/>
+    <text x="778" y="347" font-size="14" text-anchor="middle" fill="#605d75">semântica</text>
+
+  </g>
+</svg>

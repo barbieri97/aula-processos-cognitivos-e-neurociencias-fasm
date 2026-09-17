@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 356" role="img" aria-label="Amnesia anterograda e retrograda no eixo do tempo">
+  <title>Amnésia anterógrada e retrógrada no eixo do tempo</title>
+  <desc>Duas faixas de tempo cortadas pela lesao. Na anterograda, o passado fica preservado e nada novo se consolida. Na retrograda, o passado anterior a lesao e perdido com gradiente — o mais recente cai mais — e a formacao de novas memorias continua.</desc>
+
+  <defs>
+    <pattern id="falha" width="9" height="9" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#a84a1a" stroke-width="2.6" stroke-opacity="0.4"/>
+    </pattern>
+    <linearGradient id="ribot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4b3ba6" stop-opacity="0.18"/>
+      <stop offset="0.4" stop-color="#4b3ba6" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#a84a1a" stop-opacity="0.5"/>
+    </linearGradient>
+    <marker id="a-seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#605d75"/>
+    </marker>
+  </defs>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
+
+    <!-- marcador da lesão -->
+    <text x="310" y="42" font-size="14" font-weight="700" text-anchor="middle" fill="#a84a1a">lesão</text>
+    <path d="M303 50 L 317 50 L 310 60 Z" fill="#a84a1a"/>
+    <path d="M310 58 V 282" stroke="#a84a1a" stroke-width="3" fill="none" stroke-dasharray="7 5"/>
+
+    <!-- ===== anterógrada ===== -->
+    <text x="40" y="88" font-size="16" font-weight="700">amnésia anterógrada</text>
+    <rect x="40" y="98" width="258" height="44" rx="8" fill="#4b3ba6" fill-opacity="0.16" stroke="#4b3ba6" stroke-width="2.5"/>
+    <text x="169" y="125" font-size="13" font-weight="700" text-anchor="middle" fill="#4b3ba6">passado preservado</text>
+    <rect x="322" y="98" width="258" height="44" rx="8" fill="url(#falha)" stroke="#a84a1a" stroke-width="2.5" stroke-dasharray="7 5"/>
+    <text x="451" y="125" font-size="13" font-weight="700" text-anchor="middle" fill="#a84a1a">não forma novas</text>
+    <text x="169" y="162" font-size="12" text-anchor="middle" fill="#605d75">o quadro de H.M.</text>
+
+    <!-- ===== retrógrada ===== -->
+    <text x="40" y="196" font-size="16" font-weight="700">amnésia retrógrada</text>
+    <rect x="40" y="206" width="258" height="44" rx="8" fill="url(#ribot)" stroke="#a84a1a" stroke-width="2.5"/>
+    <text x="169" y="233" font-size="13" font-weight="700" text-anchor="middle">o recente cai mais</text>
+    <rect x="322" y="206" width="258" height="44" rx="8" fill="#4b3ba6" fill-opacity="0.16" stroke="#4b3ba6" stroke-width="2.5"/>
+    <text x="451" y="233" font-size="13" font-weight="700" text-anchor="middle" fill="#4b3ba6">forma novas</text>
+    <text x="169" y="272" font-size="12" text-anchor="middle" fill="#605d75">gradiente temporal — lei de Ribot</text>
+
+    <!-- eixo do tempo -->
+    <path d="M40 302 H 580" stroke="#605d75" stroke-width="2" fill="none" marker-end="url(#a-seta)"/>
+    <text x="169" y="326" font-size="12.5" text-anchor="middle" fill="#605d75">antes da lesão</text>
+    <text x="451" y="326" font-size="12.5" text-anchor="middle" fill="#605d75">depois da lesão</text>
+
+  </g>
+</svg>

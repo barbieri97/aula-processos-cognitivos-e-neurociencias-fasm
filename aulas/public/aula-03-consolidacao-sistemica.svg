@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300" role="img" aria-label="Consolidacao sistemica">
+  <title>Consolidação sistêmica: do hipocampo para o córtex</title>
+  <desc>Tres momentos. Logo depois do aprendizado o hipocampo sustenta as ligacoes com o cortex; ao longo de semanas e meses as ligacoes entre areas corticais se fortalecem e a participacao do hipocampo diminui.</desc>
+
+  <defs>
+    <marker id="c-seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#605d75"/>
+    </marker>
+  </defs>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
+
+    <text x="100" y="28" font-size="13.5" font-weight="700" text-anchor="middle" fill="#605d75">logo depois</text>
+    <text x="310" y="28" font-size="13.5" font-weight="700" text-anchor="middle" fill="#605d75">semanas</text>
+    <text x="520" y="28" font-size="13.5" font-weight="700" text-anchor="middle" fill="#605d75">meses a anos</text>
+
+    <rect x="10" y="42" width="180" height="196" rx="10" fill="#ffffff" stroke="#e6e2dc" stroke-width="2"/>
+    <rect x="220" y="42" width="180" height="196" rx="10" fill="#ffffff" stroke="#e6e2dc" stroke-width="2"/>
+    <rect x="430" y="42" width="180" height="196" rx="10" fill="#ffffff" stroke="#e6e2dc" stroke-width="2"/>
+
+    <!-- ===== painel 1 ===== -->
+    <text x="100" y="68" font-size="12" text-anchor="middle" fill="#605d75">córtex</text>
+    <g stroke="#4b3ba6" stroke-width="1.2" stroke-opacity="0.25" fill="none" stroke-dasharray="4 3">
+      <path d="M36 83 Q 52 66 68 83"/><path d="M68 83 Q 84 66 100 83"/>
+      <path d="M100 83 Q 116 66 132 83"/><path d="M132 83 Q 148 66 164 83"/>
+    </g>
+    <g stroke="#a84a1a" stroke-width="2.4" fill="none">
+      <path d="M100 181 L36 101"/><path d="M100 181 L68 101"/><path d="M100 181 L100 101"/>
+      <path d="M100 181 L132 101"/><path d="M100 181 L164 101"/>
+    </g>
+    <g fill="#4b3ba6" fill-opacity="0.25" stroke="#4b3ba6" stroke-width="2">
+      <circle cx="36" cy="92" r="9"/><circle cx="68" cy="92" r="9"/><circle cx="100" cy="92" r="9"/>
+      <circle cx="132" cy="92" r="9"/><circle cx="164" cy="92" r="9"/>
+    </g>
+    <ellipse cx="100" cy="198" rx="32" ry="17" fill="#a84a1a"/>
+    <text x="100" y="203" font-size="11.5" font-weight="700" text-anchor="middle" fill="#faf9f6">hipocampo</text>
+
+    <!-- ===== painel 2 ===== -->
+    <g stroke="#4b3ba6" stroke-width="2" stroke-opacity="0.55" fill="none">
+      <path d="M246 83 Q 262 66 278 83"/><path d="M278 83 Q 294 66 310 83"/>
+      <path d="M310 83 Q 326 66 342 83"/><path d="M342 83 Q 358 66 374 83"/>
+    </g>
+    <g stroke="#a84a1a" stroke-width="1.7" stroke-opacity="0.6" fill="none">
+      <path d="M310 181 L246 101"/><path d="M310 181 L278 101"/><path d="M310 181 L310 101"/>
+      <path d="M310 181 L342 101"/><path d="M310 181 L374 101"/>
+    </g>
+    <g fill="#4b3ba6" fill-opacity="0.55" stroke="#4b3ba6" stroke-width="2">
+      <circle cx="246" cy="92" r="9"/><circle cx="278" cy="92" r="9"/><circle cx="310" cy="92" r="9"/>
+      <circle cx="342" cy="92" r="9"/><circle cx="374" cy="92" r="9"/>
+    </g>
+    <ellipse cx="310" cy="198" rx="32" ry="17" fill="#a84a1a" fill-opacity="0.45" stroke="#a84a1a" stroke-width="2"/>
+
+    <!-- ===== painel 3 ===== -->
+    <g stroke="#4b3ba6" stroke-width="2.8" fill="none">
+      <path d="M456 83 Q 472 64 488 83"/><path d="M488 83 Q 504 64 520 83"/>
+      <path d="M520 83 Q 536 64 552 83"/><path d="M552 83 Q 568 64 584 83"/>
+    </g>
+    <g stroke="#a84a1a" stroke-width="1.2" stroke-opacity="0.25" fill="none" stroke-dasharray="4 3">
+      <path d="M520 181 L456 101"/><path d="M520 181 L488 101"/><path d="M520 181 L520 101"/>
+      <path d="M520 181 L552 101"/><path d="M520 181 L584 101"/>
+    </g>
+    <g fill="#4b3ba6" stroke="#4b3ba6" stroke-width="2">
+      <circle cx="456" cy="92" r="9"/><circle cx="488" cy="92" r="9"/><circle cx="520" cy="92" r="9"/>
+      <circle cx="552" cy="92" r="9"/><circle cx="584" cy="92" r="9"/>
+    </g>
+    <ellipse cx="520" cy="198" rx="32" ry="17" fill="none" stroke="#a84a1a" stroke-width="2" stroke-opacity="0.45" stroke-dasharray="5 4"/>
+
+    <!-- eixo do tempo -->
+    <text x="310" y="264" font-size="13" text-anchor="middle" fill="#605d75">tempo — e o sono de ondas lentas</text>
+    <path d="M20 280 H 596" stroke="#605d75" stroke-width="2" fill="none" marker-end="url(#c-seta)"/>
+
+  </g>
+</svg>

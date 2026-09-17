@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="46 14 500 394" role="img" aria-label="Esquema da ressecção bilateral do lobo temporal medial">
+  <title>A cirurgia de 1953, em corte coronal esquemático</title>
+  <desc>Corte coronal esquematico do encefalo. Nos dois lobos temporais, a porcao medial aparece hachurada: e a regiao retirada na cirurgia de H.M., que continha a amigdala e a metade anterior do hipocampo.</desc>
+
+  <defs>
+    <pattern id="hachura" width="9" height="9" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#a84a1a" stroke-width="2.6" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
+
+    <!-- massa hemisférica -->
+    <ellipse cx="290" cy="170" rx="230" ry="140" fill="#1e1c2b" fill-opacity="0.04" stroke="#605d75" stroke-width="2.5"/>
+
+    <!-- fissura inter-hemisférica -->
+    <path d="M290 32 V 250" stroke="#605d75" stroke-width="2" fill="none" stroke-opacity="0.55"/>
+
+    <!-- ventrículos laterais -->
+    <g stroke="#605d75" stroke-width="2" fill="none" stroke-opacity="0.5">
+      <path d="M262 104 Q 244 138 264 164"/>
+      <path d="M318 104 Q 336 138 316 164"/>
+    </g>
+
+    <!-- lobos temporais -->
+    <ellipse cx="155" cy="282" rx="92" ry="54" fill="#1e1c2b" fill-opacity="0.04" stroke="#605d75" stroke-width="2.5"/>
+    <ellipse cx="425" cy="282" rx="92" ry="54" fill="#1e1c2b" fill-opacity="0.04" stroke="#605d75" stroke-width="2.5"/>
+
+    <!-- região retirada, dos dois lados -->
+    <ellipse cx="205" cy="285" rx="46" ry="40" fill="url(#hachura)" stroke="#a84a1a" stroke-width="2.5" stroke-dasharray="7 5"/>
+    <ellipse cx="375" cy="285" rx="46" ry="40" fill="url(#hachura)" stroke="#a84a1a" stroke-width="2.5" stroke-dasharray="7 5"/>
+
+    <!-- amígdala e hipocampo, esquemáticos -->
+    <g fill="#a84a1a">
+      <circle cx="220" cy="264" r="12"/>
+      <circle cx="360" cy="264" r="12"/>
+      <ellipse cx="200" cy="302" rx="18" ry="10" transform="rotate(14 200 302)"/>
+      <ellipse cx="380" cy="302" rx="18" ry="10" transform="rotate(-14 380 302)"/>
+    </g>
+    <g font-size="12" font-weight="700" text-anchor="middle" fill="#faf9f6">
+      <text x="220" y="269">A</text>
+      <text x="360" y="269">A</text>
+      <text x="200" y="307">H</text>
+      <text x="380" y="307">H</text>
+    </g>
+
+    <!-- rótulo -->
+    <rect x="176" y="356" width="17" height="17" rx="3" fill="url(#hachura)" stroke="#a84a1a" stroke-width="2"/>
+    <text x="203" y="370" font-size="15" font-weight="700" fill="#a84a1a">ressecção bilateral · 1953</text>
+    <text x="290" y="400" font-size="12.5" text-anchor="middle" fill="#605d75">A amígdala · H hipocampo, metade anterior</text>
+
+  </g>
+</svg>

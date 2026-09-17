@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" role="img" aria-label="Esquema das estruturas da memoria">
+  <title>As estruturas da memória, em vista medial esquemática</title>
+  <desc>Vista medial esquematica do encefalo com seis estruturas numeradas: cortex cerebral, hipocampo e cortex entorrinal, que sustentam a memoria explicita; ganglios da base e cerebelo, que sustentam a implicita; e amigdala, que modula as duas.</desc>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
+
+    <!-- massa hemisférica -->
+    <path d="M 60 200 C 60 120, 140 70, 260 66 C 390 62, 510 110, 540 190 C 555 230, 540 270, 500 292 L 340 300 C 270 305, 190 300, 140 285 C 90 268, 60 245, 60 200 Z"
+          fill="#1e1c2b" fill-opacity="0.04" stroke="#605d75" stroke-width="2.5"/>
+
+    <!-- cerebelo, encaixado sob a porção posterior -->
+    <ellipse cx="486" cy="306" rx="58" ry="36" fill="#a84a1a" fill-opacity="0.18" stroke="#a84a1a" stroke-width="2.5"/>
+    <g stroke="#a84a1a" stroke-width="1.4" stroke-opacity="0.45" fill="none">
+      <path d="M446 292 H 526"/><path d="M434 306 H 538"/><path d="M446 320 H 526"/>
+    </g>
+
+    <!-- córtex cerebral -->
+    <path d="M 90 165 C 105 105, 180 78, 270 76 C 380 73, 490 115, 525 185"
+          stroke="#4b3ba6" stroke-width="12" stroke-opacity="0.28" stroke-linecap="round" fill="none"/>
+
+    <!-- gânglios da base -->
+    <ellipse cx="252" cy="188" rx="64" ry="27" transform="rotate(-12 252 188)"
+             fill="#a84a1a" fill-opacity="0.72" stroke="#a84a1a" stroke-width="2"/>
+
+    <!-- hipocampo -->
+    <path d="M 204 256 C 200 282, 218 298, 246 298 C 274 298, 288 284, 290 260"
+          stroke="#4b3ba6" stroke-width="15" stroke-linecap="round" fill="none"/>
+
+    <!-- córtex entorrinal -->
+    <ellipse cx="162" cy="286" rx="27" ry="13" transform="rotate(-14 162 286)"
+             fill="#4b3ba6" fill-opacity="0.5" stroke="#4b3ba6" stroke-width="2"/>
+
+    <!-- amígdala -->
+    <circle cx="180" cy="240" r="17" fill="#9a5b00"/>
+
+    <!-- ===== marcadores sobre cada estrutura ===== -->
+    <g font-size="13" font-weight="700" text-anchor="middle" fill="#faf9f6">
+      <circle cx="270" cy="76" r="12" fill="#4b3ba6"/><text x="270" y="81">1</text>
+      <circle cx="246" cy="294" r="12" fill="#4b3ba6"/><text x="246" y="299">2</text>
+      <circle cx="162" cy="286" r="12" fill="#4b3ba6"/><text x="162" y="291">3</text>
+      <circle cx="252" cy="188" r="12" fill="#8f3d14"/><text x="252" y="193">4</text>
+      <circle cx="486" cy="306" r="12" fill="#a84a1a"/><text x="486" y="311">5</text>
+      <circle cx="180" cy="240" r="12" fill="#7a4700"/><text x="180" y="245">6</text>
+    </g>
+
+    <!-- ===== legenda numerada ===== -->
+    <g font-size="13" font-weight="700" text-anchor="middle" fill="#faf9f6">
+      <circle cx="612" cy="62" r="12" fill="#4b3ba6"/><text x="612" y="67">1</text>
+      <circle cx="612" cy="116" r="12" fill="#4b3ba6"/><text x="612" y="121">2</text>
+      <circle cx="612" cy="170" r="12" fill="#4b3ba6"/><text x="612" y="175">3</text>
+      <circle cx="612" cy="224" r="12" fill="#a84a1a"/><text x="612" y="229">4</text>
+      <circle cx="612" cy="278" r="12" fill="#a84a1a"/><text x="612" y="283">5</text>
+      <circle cx="612" cy="332" r="12" fill="#9a5b00"/><text x="612" y="337">6</text>
+    </g>
+    <g font-size="16" font-weight="700">
+      <text x="634" y="60" fill="#4b3ba6">córtex cerebral</text>
+      <text x="634" y="114" fill="#4b3ba6">hipocampo</text>
+      <text x="634" y="168" fill="#4b3ba6">córtex entorrinal</text>
+      <text x="634" y="222" fill="#a84a1a">gânglios da base</text>
+      <text x="634" y="276" fill="#a84a1a">cerebelo</text>
+      <text x="634" y="330" fill="#9a5b00">amígdala</text>
+    </g>
+    <g font-size="12.5" fill="#605d75">
+      <text x="634" y="79">armazenamento de longo prazo</text>
+      <text x="634" y="133">forma a memória explícita</text>
+      <text x="634" y="187">porta de entrada do hipocampo</text>
+      <text x="634" y="241">hábitos e procedimentos</text>
+      <text x="634" y="295">habilidades motoras</text>
+      <text x="634" y="349">modula pela carga emocional</text>
+    </g>
+
+  </g>
+</svg>
