@@ -43,7 +43,9 @@ Se a aula for usar outro visual, o roteiro dos dois caminhos (tema npm ou DS ger
 - **Markdown dentro de componente só funciona com linha em branco** depois da tag de abertura
   e antes da de fechamento. Sem elas, `**negrito**` aparece com os asteriscos na tela.
 
-`npm run lint` pega as quatro primeiras. Rode antes de commitar.
+`npm run lint` pega a primeira, a terceira e a quarta — além de layout inexistente e imagem que
+não existe em `aulas/public/`. O `asset()` esquecido e a linha em branco que falta só aparecem
+no slide renderizado. Rode o lint antes de commitar.
 
 E depois de escrever uma aula, `npm run build && npm run overflow`: slide alto demais some da
 tela sem avisar e vira duas páginas no PDF.
@@ -54,6 +56,77 @@ Escolha o `layout:` que casa com a forma do conteúdo e preencha o frontmatter d
 vai dentro do slide, use os componentes. `<style>` num slide é sinal de que falta um layout ou
 um componente — a exceção honesta é o desenho que só existe naquele slide.
 
+## Como escrever o conteúdo
+
+Regras tiradas das correções que o professor fez à mão na aula 03. **Valem mais que os
+exemplos de `_modelo-aula.md` e de `docs/design-system.md`** onde os dois divergem — em
+especial no `atividade`.
+
+### O slide é apoio para quem fala, não apostila
+
+- **Uma ideia por slide, com o mínimo de texto.** A explicação é falada; se precisa ficar
+  registrada, vai para as notas `<!-- -->`. Um componente de conteúdo e, no máximo, uma frase
+  curta embaixo.
+- **Sem `<Nota>` de aparte comentando o próprio slide** ("O que observar", "Por que vale
+  corrigir", "O que realmente limita"). Esse comentário é o que o professor diz em sala.
+- **Escopo de 1º semestre.** Fica o conceito central do material da disciplina. Saem os
+  desvios de especialista: o detalhe interno de um modelo, o debate sobre um número clássico,
+  meta-análise de nicho, ressalva de replicação ou de tamanho de amostra, achado de autópsia,
+  apresentação clínica e epidemiologia que não são o tema da aula, detalhe de procedimento de
+  experimento. Estudo e número só entram quando sustentam direto o ponto do slide.
+
+### Escrita direta
+
+- **Nada de frase de efeito.** Sem gancho que antecipa o slide seguinte ("e foi um paciente,
+  em 1953, que tornou isso impossível de ignorar"), sem paralelismo retórico ("nem pelo mesmo
+  sistema, nem pelo mesmo tempo, nem com o mesmo esforço"), sem jogo de palavras numa `desc`
+  ("quantas memórias cabem dentro da palavra memória"), sem título em dois tempos ("O que a
+  curva mostra, e o que ela não mostra").
+- **Curto nos campos de frontmatter.** `note` de `secao` descreve a parte em poucas palavras
+  ("Como os diferentes tipos de memória são divididos.", "O caso H.M."). Itens de `<Objetivos>`
+  são verbo + objeto, sem critério embutido ("Descrever os quatro processos da memória").
+  `pontos` do `fecho` também.
+- **Evite o travessão como conector.** Onde " — " liga duas orações, prefira vírgula, ponto
+  ou "e".
+- **Nome descritivo, não metáfora de autor.** "Os sete tipos de falha da memória", e não "os
+  sete pecados". Num esquema, o rótulo é o nome do conceito ("curto prazo", "memória
+  operacional"), e não uma descrição dele ("armazenamento breve").
+- **`<Fonte>` é crédito, não explicação**: "Dados de Murre &amp; Dros (2015)", sem o método.
+- **Não cite "material da disciplina"** como `origem` de `<Termo>` nem como fonte. `origem` só
+  com autor ou taxonomia nomeável; senão, omita o campo.
+
+### Campos opcionais ficam de fora
+
+O professor apaga o campo quando ele não acrescenta nada:
+
+- `atividade`: só `title` e `passos`. **Sem `tempo`, `formato` nem `entrega`**, e os passos sem
+  cronômetro embutido ("em três minutos").
+- `fecho`: sem `proximo` nem `leitura`.
+- `destaque` de tese: só `title`, `tipo` e `fonte` — sem `kicker` e sem corpo.
+- `<Caso>`: sem `contexto` quando ele seria genérico ("qualquer aplicativo, qualquer dia").
+- `comparacao`: `pergunta` só quando formula de fato o contraste; enfeite sai.
+- `roteiro`: `desc` pode faltar num item.
+
+### Imagem e vídeo ocupam a tela
+
+- Esquema que se explica sozinho vai em `figura` com `lado: cheia`, sem parágrafo ao lado.
+- Vídeo é `layout: iframe` (tela cheia), sem título, descrição nem `<Nota>` junto.
+- Imagem real (ilustração, foto) no lugar de esquema autoral é bem-vinda — com o nome no
+  padrão `aula-NN-<assunto>` e o crédito, se não for autoral.
+
+### Ao cortar um slide, feche as pontas
+
+Corte deixa referência pendurada, e nada disso quebra o build. Varra o deck atrás de:
+
+- respostas de `<Checagem>` que citam o slide que saiu ("o slide do sono") ou um nome trocado
+  ("o pecado 05");
+- a `desc` do `roteiro` que promete o assunto cortado;
+- a numeração "Esquema N" nos `rotulo`, e a contagem "os oito esquemas são autorais";
+- as `<Referencia>` e a `<Fonte>` de "demais obras citadas" dos estudos que saíram;
+- notas `<!-- -->` que definem termos que não aparecem mais;
+- o `.svg` que ficou órfão em `aulas/public/` e a linha dele no `README.md` de lá;
+- a `<Checagem>` cuja pergunta mudou e cuja resposta não mudou junto.
+
 ## Convenções
 
 | | |
@@ -63,7 +136,9 @@ um componente — a exceção honesta é o desenho que só existe naquele slide.
 | Deck de bancada | prefixo `_` — o site não publica: `_design-system.md` (catálogo) e `_modelo-aula.md` (esqueleto para copiar) |
 | Tema | `theme: none` + design system local; ou um pacote npm, ver `docs/temas.md` |
 | Idioma | conteúdo em português |
-| Imagens | `aulas/public/` — **não** na raiz do repo (veja "Por que `aulas/public/`" abaixo) |
+| Imagens | `aulas/public/aula-NN-<assunto>.ext` — **não** na raiz do repo (veja "Por que `aulas/public/`" abaixo); cada figura ganha uma linha em `aulas/public/README.md` |
+| Material-fonte | o PDF do capítulo da aula em `referencias/aula-NN/` (versionado) |
+| VS Code | a extensão do Slidev só enxerga os decks listados em `slidev.include`, em `.vscode/settings.json` — acrescente a aula nova lá |
 | Headmatter | além de `theme`/`title`, cada aula traz `info:` (ementa de uma linha), `date:` (`YYYY-MM-DD`, entre aspas) e `download: true` — os dois primeiros alimentam a landing page, o terceiro gera o PDF |
 | Identidade do curso | `site.config.json` na raiz (`title`, `institution`, `description`, `intro`) — o único lugar com o nome da disciplina |
 
@@ -75,6 +150,7 @@ tempo. O `title:` dele é o título do deck e o que a `capa` mostra — não rep
 ```bash
 npm run dev                                  # abre a primeira aula de aulas/ com hot reload
 npm run dev -- 03                            # abre a aula cujo nome contém "03"
+npm run dev -- modelo                        # também abre decks de bancada (os `_`)
 npm run ref                                  # abre o catálogo de layouts/componentes
 npm run lint                                 # valida todos os decks
 npm run build                                # builda tudo em dist/ (roda o lint antes)
@@ -85,7 +161,8 @@ npm run overflow                             # procura slide que não cabe na te
 inicial só existe depois do `npm run build` — é o build que dá a cada deck o seu `--base`.
 
 Para adicionar uma aula nova: crie o `.md` em `aulas/`, commit, push. O workflow builda e
-publica — nenhuma config precisa ser tocada.
+publica — nenhuma config do site precisa ser tocada (só o `slidev.include` do VS Code, se você
+usa a extensão).
 
 ## O PDF de cada aula
 
