@@ -47,7 +47,7 @@ itens:
     }
   - {
       tema: "Quando a memória falha",
-      desc: "distorções, amnésias e declínio"
+      desc: "distorções e amnésias"
     }
 ---
 
@@ -256,7 +256,7 @@ note: Dizer que alguém "tem memória ruim" não diz nada. A pergunta útil é e
 ---
 layout: figura
 imagem: /aula-03-quatro-processos.svg
-rotulo: Esquema 3
+rotulo: Esquema 2
 legenda: "Os quatro processos em sequência, e o retorno da reconsolidação.
   Esquema autoral."
 lado: cheia
@@ -308,7 +308,7 @@ longa duração.
 
 </Termo>
 
-A capacidade é ilimitada, mas ainda instável.
+A capacidade é vastíssima, mas o registro recente ainda é instável.
 
 ---
 layout: default
@@ -351,12 +351,12 @@ primeira vez que um processo mental superior virou curva.
 
 </Pessoa>
 
-A perda é **rápida no começo e lenta depois** não é uma reta.
+A perda é **rápida no começo e lenta depois**, não é uma reta.
 
 ---
 layout: figura
 imagem: /aula-03-consolidacao-sistemica.svg
-rotulo: Esquema 4
+rotulo: Esquema 3
 legenda: "Ao longo de semanas e meses as ligações entre áreas corticais se
   fortalecem e a participação do hipocampo diminui. Esquema autoral."
 lado: direita
@@ -403,7 +403,7 @@ Duas propriedades que a aula toda vai usar:
 - é **construtiva**: a lembrança é remontada a cada vez, e cada remontagem
   <mark>pode alterar o que será lembrado depois</mark>.
 
-<Fonte>A segunda propriedade é a reconsolidação do Esquema 3 — e é a porta de entrada das distorções da Parte 4.</Fonte>
+<Fonte>A segunda propriedade é a reconsolidação do Esquema 2 — e é a porta de entrada das distorções da Parte 4.</Fonte>
 
 ---
 layout: atividade
@@ -469,15 +469,15 @@ recuperar — e é a tentativa de recuperação, com esforço, que deixa marca.
   primeiro.
 - **b** exagera. A releitura codifica, sim — só codifica menos por minuto
   investido, e produz uma sensação de domínio que a prova não confirma.
-- **d** inventa uma informação que não está no enunciado. É a resposta que o
-  slide do sono torna tentadora, e o enunciado não a sustenta.
+- **d** inventa uma informação que não está no enunciado: ninguém disse como
+  cada um dormiu.
 
 ---
 layout: secao
 numero: "03"
 kicker: Parte 3
 title: Onde a memória acontece
-note: O caso HM.
+note: O caso H.M.
 ---
 
 ---
@@ -507,7 +507,7 @@ url: https://www.youtube.com/embed/W0TTQroCjoQ
 
 ---
 layout: figura
-imagem: /cerebro-hm.png
+imagem: /aula-03-cerebro-hm.png
 lado: direita
 ajuste: contain
 ---
@@ -558,7 +558,7 @@ neuropsicologia da memória.
 ---
 layout: figura
 imagem: /aula-03-neuroanatomia-memoria.svg
-rotulo: Esquema 6
+rotulo: Esquema 4
 legenda: "Cada estrutura ao lado do sistema que sustenta. Esquema autoral — as
   posições são aproximadas e servem para localizar, não para estudar
   neuroanatomia."
@@ -571,7 +571,7 @@ ajuste: contain
 ---
 layout: figura
 imagem: /aula-03-ltp-ltd.svg
-rotulo: Esquema 7
+rotulo: Esquema 5
 legenda: "A mesma sinapse em dois estados: potenciada e deprimida. Esquema
   autoral."
 lado: direita
@@ -612,9 +612,7 @@ direita: Depressão de longa duração
 - Sem ela não haveria como reescrever uma aprendizagem já instalada
 
 <!--
-Via perfurante — feixe de fibras que leva informação do córtex entorrinal ao
-giro denteado do hipocampo. LTP: long-term potentiation. LTD: long-term
-depression.
+LTP: long-term potentiation. LTD: long-term depression.
 -->
 
 ---
@@ -677,7 +675,7 @@ layout: default
 
 <Checagem
   rotulo="Teste"
-  pergunta="Qual destas palavras não estava na lista que você acabou de ler?"
+  pergunta="Qual destas palavras estava na lista que você acabou de ler?"
   :alternativas="[
     'travesseiro',
     'dormir',
@@ -774,7 +772,7 @@ mnêmico do transtorno de estresse pós-traumático.
 </Cartao>
 </Grade>
 
-<Fonte>Schacter (1999) classifica os sete: 01 a 03 são formas de esquecer, 04 a 06 de distorcer, e 07 é a lembrança que não vai embora. Todos, segundo ele, são subprodutos de propriedades adaptativas do sistema.</Fonte>
+<Fonte>Schacter (1999) classifica as sete: 01 a 03 são formas de esquecer, 04 a 06 de distorcer, e 07 é a lembrança que não vai embora. Todas, segundo ele, são subprodutos de propriedades adaptativas do sistema.</Fonte>
 
 ---
 layout: default
@@ -802,17 +800,12 @@ depoimento da testemunha.
 layout: figura
 imagem: /aula-03-amnesias.svg
 lado: cheia
-rotulo: Esquema 8
+rotulo: Esquema 6
 legenda: "As duas amnésias definidas pelo momento da lesão. Esquema autoral."
 ---
 
 
 <Fonte>O gradiente é a lei de Ribot, e ele é a previsão que a consolidação sistêmica faz: memória antiga já migrou para o córtex, e por isso resiste.</Fonte>
-
-<!--
-TCE — traumatismo cranioencefálico. AVC — acidente vascular cerebral. ECT —
-eletroconvulsoterapia.
--->
 
 ---
 layout: default
@@ -837,7 +830,7 @@ layout: default
 <Nota tipo="ok" titulo="c. Sugestibilidade, porque ela incorporou informação vinda de fora">
 
 Há uma fonte externa identificável — o comentário da outra pessoa — e o conteúdo
-dela entrou na lembrança. É a definição do pecado 05.
+dela entrou na lembrança. É a definição da falha 05.
 
 </Nota>
 
@@ -857,8 +850,8 @@ title: O que fica
 pontos:
   - "Memória são sistemas com durações e circuitos diferentes"
   - "Quatro processos para a memorização"
-  - "O caso HM"
-  - "A lembrança é reconstruida e as falhas acontecem na reconstrução"
+  - "O caso H.M."
+  - "A lembrança é reconstruída, e as falhas acontecem na reconstrução"
 ---
 
 ---
@@ -889,29 +882,16 @@ layout: default
   link="https://doi.org/10.1037/0003-066X.54.3.182" />
 
 <Referencia
-  autores="Cowan, N."
-  ano="2001"
-  titulo="The magical number 4 in short-term memory: a reconsideration of mental storage capacity"
-  onde="Behavioral and Brain Sciences, 24(1), 87–114" />
+  autores="Sparrow, B., Liu, J., &amp; Wegner, D. M."
+  ano="2011"
+  titulo="Google effects on memory: cognitive consequences of having information at our fingertips"
+  onde="Science, 333(6043), 776–778" />
 
 ---
 layout: default
 ---
 
 # Referências (2)
-
-<Referencia
-  autores="Sparrow, B., Liu, J., &amp; Wegner, D. M."
-  ano="2011"
-  titulo="Google effects on memory: cognitive consequences of having information at our fingertips"
-  onde="Science, 333(6043), 776–778" />
-
-<Referencia
-  autores="Annese, J., e colaboradores"
-  ano="2014"
-  titulo="Postmortem examination of patient H.M.'s brain based on histological sectioning and digital 3D reconstruction"
-  onde="Nature Communications, 5, 3122"
-  link="https://doi.org/10.1038/ncomms4122" />
 
 <Referencia
   autores="Murre, J. M. J., &amp; Dros, J."
@@ -921,28 +901,10 @@ layout: default
   link="https://doi.org/10.1371/journal.pone.0120644" />
 
 <Referencia
-  autores="Hu, X., Cheng, L. Y., Chiu, M. H., &amp; Paller, K. A."
-  ano="2020"
-  titulo="Promoting memory consolidation during sleep: a meta-analysis of targeted memory reactivation"
-  onde="Psychological Bulletin, 146(3), 218–244" />
-
----
-layout: default
----
-
-# Referências (3)
-
-<Referencia
   autores="Yang, C., Luo, L., Vadillo, M. A., Yu, R., &amp; Shanks, D. R."
   ano="2021"
   titulo="Testing (quizzing) boosts classroom learning: a systematic and meta-analytic review"
   onde="Psychological Bulletin, 147(4), 399–435" />
-
-<Referencia
-  autores="Bertola, L., e colaboradores"
-  ano="2023"
-  titulo="Prevalence of dementia and cognitive impairment no dementia in a large and diverse nationally representative sample: the ELSI-Brazil study"
-  onde="The Journals of Gerontology: Series A, 78(6), 1060–1068" />
 
 <Referencia
   autores="Arce, R., Selaya, A., Sanmarco, J., &amp; Fariña, F."
@@ -950,4 +912,4 @@ layout: default
   titulo="Implanting rich autobiographical false memories: meta-analysis for forensic practice and judicial judgment making"
   onde="International Journal of Clinical and Health Psychology, 23(4), 100386" />
 
-<Fonte>Demais obras citadas em slide: Baddeley (2000); Cordi &amp; Rasch (2020); Blank &amp; Launay (2014); Schwieren e colaboradores (2017); Skulmowski (2023); Černe e colaboradores (2023); Pardilla-Delgado &amp; Payne (2017); Arena &amp; Rabinstein (2015); Hanke &amp; Yilmazer-Hanke (1997); Barroeta-Espar e colaboradores (2018); Augustinack e colaboradores (2014); Roediger &amp; McDermott (1995). Retratos: Wikimedia Commons. Os oito esquemas são autorais.</Fonte>
+<Fonte>Demais obras citadas em slide: Roediger &amp; McDermott (1995); Blank &amp; Launay (2014); Schwieren e colaboradores (2017); Pardilla-Delgado &amp; Payne (2017); Černe e colaboradores (2023). Retratos: Wikimedia Commons. Os seis esquemas são autorais.</Fonte>
