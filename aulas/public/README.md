@@ -53,6 +53,10 @@ Nome no padrão `aula-NN-<assunto>`, para dar para apagar tudo de uma aula de um
 | `aula-03-ltp-ltd.svg` | esquema 5 — a mesma sinapse potenciada e deprimida |
 | `aula-03-amnesias.svg` | esquema 6 — anterógrada e retrógrada no eixo do tempo, com o gradiente de Ribot |
 | `aula-03-cerebro-hm.png` | ilustração comparando o encéfalo de H.M. com um típico, em vista ventral e em corte coronal — **crédito a confirmar**: não é autoral nem veio da bibliografia da disciplina |
+| `aula-04-areas-linguagem.jpg` | áreas de Broca e Wernicke, córtex auditivo e vias dorsal e ventral, hemisfério esquerdo — **crédito a confirmar**: recorte de livro-texto vindo dos slides antigos (`referencias/aula-04/`, p. 13), sem a fonte indicada |
+| `aula-04-fatores-desenvolvimento.svg` | esquema 1 — seis fatores do desenvolvimento da linguagem, biologia × experiência |
+| `aula-04-corpo-caloso.png` | corte coronal com o corpo caloso em destaque e rótulos traduzidos — **crédito a confirmar**: ilustração de terceiro vinda dos slides antigos (`referencias/aula-04/`, p. 15) |
+| `aula-04-afasias.svg` | esquema 2 — Broca, Wernicke e condução × fluência, compreensão e repetição |
 
 Os `.png` da aula 01 são recortes das figuras de **Eysenck & Keane, _Manual de psicologia
 cognitiva_, 7ª ed. (Artmed, 2017), cap. 1** — a bibliografia da disciplina —, extraídos do
@@ -77,6 +81,20 @@ localizar, não para estudar neuroanatomia.
 A exceção da aula 03 é o `aula-03-cerebro-hm.png`, que **não é autoral** — é uma ilustração
 de terceiro, e o slide ainda está sem o crédito. Antes de abrir o site para fora da turma,
 é o primeiro ponto a resolver: ou a fonte entra num `<Fonte>`, ou a imagem sai.
+
+Os dois `aula-04-*.svg` são autorais: o dos fatores, desenhado a partir dos slides antigos
+da aula de linguagem (`referencias/aula-04/`), e o das afasias, a partir de Le, Lui & Lui
+(2024). As fotografias da aula 04 (Broca, Wernicke, o encéfalo de Leborgne e Dina Sanichar)
+não estão nesta pasta: entram por URL do Wikimedia Commons, com o crédito na legenda de cada
+slide.
+
+As exceções da aula 04 são o `aula-04-areas-linguagem.jpg` e o `aula-04-corpo-caloso.png`,
+que **não são autorais**: são as figuras que já estavam nos slides antigos, extraídas do PDF.
+Na primeira foi apagada a borda do texto vizinho do livro; na segunda, os rótulos em inglês
+foram trocados por rótulos em português e o destaque do corpo caloso foi redesenhado. Os
+slides antigos não dizem de onde as duas vêm, então os slides estão sem crédito. É o mesmo
+caso do `aula-03-cerebro-hm.png`: antes de abrir o site para fora da turma, ou a fonte entra
+na legenda, ou a imagem sai.
 
 ### Como recortar uma figura nova de um PDF
 

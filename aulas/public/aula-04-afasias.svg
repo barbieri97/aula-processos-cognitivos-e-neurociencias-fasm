@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" role="img" aria-label="As tres afasias classicas em fluencia, compreensao e repeticao">
+  <title>As três afasias clássicas: fluência, compreensão e repetição</title>
+  <desc>Matriz de tres linhas e tres colunas. Afasia de Broca: fala nao fluente, compreensao preservada, repeticao alterada. Afasia de Wernicke: fala fluente, compreensao alterada, repeticao alterada. Afasia de conducao: fala fluente, compreensao preservada, repeticao alterada.</desc>
+
+  <defs>
+    <g id="ok">
+      <circle r="20" fill="#4b3ba6" fill-opacity="0.14" stroke="#4b3ba6" stroke-width="2.5"/>
+      <path d="M -9 1 L -3 8 L 10 -7" stroke="#4b3ba6" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="falha">
+      <circle r="20" fill="#a84a1a" fill-opacity="0.85"/>
+      <path d="M -7 -7 L 7 7 M 7 -7 L -7 7" stroke="#faf9f6" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
+
+    <!-- cabeçalho -->
+    <g font-size="16" font-weight="700" text-anchor="middle" fill="#605d75">
+      <text x="310" y="40">fluência</text>
+      <text x="440" y="40">compreensão</text>
+      <text x="570" y="40">repetição</text>
+    </g>
+
+    <!-- linhas -->
+    <g stroke="#605d75" stroke-opacity="0.35" stroke-width="1.5">
+      <path d="M 30 60 H 620"/>
+      <path d="M 30 146 H 620"/>
+      <path d="M 30 232 H 620"/>
+      <path d="M 30 318 H 620"/>
+    </g>
+
+    <g font-size="18" font-weight="700">
+      <text x="40" y="100">afasia de Broca</text>
+      <text x="40" y="186">afasia de Wernicke</text>
+      <text x="40" y="272">afasia de condução</text>
+    </g>
+    <g font-size="13" fill="#605d75">
+      <text x="40" y="122">frontal inferior</text>
+      <text x="40" y="208">temporal superior posterior</text>
+      <text x="40" y="294">fascículo arqueado</text>
+    </g>
+
+    <!-- Broca -->
+    <use href="#falha" x="310" y="103"/>
+    <use href="#ok" x="440" y="103"/>
+    <use href="#falha" x="570" y="103"/>
+    <!-- Wernicke -->
+    <use href="#ok" x="310" y="189"/>
+    <use href="#falha" x="440" y="189"/>
+    <use href="#falha" x="570" y="189"/>
+    <!-- condução -->
+    <use href="#ok" x="310" y="275"/>
+    <use href="#ok" x="440" y="275"/>
+    <use href="#falha" x="570" y="275"/>
+
+  </g>
+</svg>

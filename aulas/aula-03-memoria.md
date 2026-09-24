@@ -774,27 +774,6 @@ mnêmico do transtorno de estresse pós-traumático.
 
 <Fonte>Schacter (1999) classifica as sete: 01 a 03 são formas de esquecer, 04 a 06 de distorcer, e 07 é a lembrança que não vai embora. Todas, segundo ele, são subprodutos de propriedades adaptativas do sistema.</Fonte>
 
----
-layout: default
----
-
-# Sugestibilidade, medida
-
-<Experimento
-  nome="Implantação de falsas memórias autobiográficas"
-  autoria="Arce e colaboradores, 2023"
-  pergunta="É possível fazer alguém lembrar de um episódio que não viveu?"
-  metodo="Meta-análise de 30 estudos de implantação de memória"
-  achado="Efeito grande (d = 1,43), e o procedimento importa: instrução não diretiva produz 0,90; imaginação guiada, 1,45; pressão para responder, 1,56." />
-
-<Pessoa nome="Elizabeth Loftus" papel="psicóloga cognitiva, Universidade da Califórnia em Irvine" foto="https://upload.wikimedia.org/wikipedia/commons/9/97/Elizabeth_Loftus-TAM_9-July_2011.JPG">
-
-Abriu essa linha nos anos 1970, mostrando que a forma da pergunta muda o
-depoimento da testemunha.
-
-</Pessoa>
-
-<Fonte>Avisar a pessoa, depois da desinformação, de que ela recebeu informação incorreta reduz o efeito a menos da metade (Blank &amp; Launay, 2014). A entrevista mal feita não é neutra: ela produz o conteúdo que depois registra.</Fonte>
 
 ---
 layout: figura
