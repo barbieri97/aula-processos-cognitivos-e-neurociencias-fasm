@@ -1,58 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" role="img" aria-label="O modelo de funcoes executivas de Diamond">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" role="img" aria-label="O modelo de funcoes executivas de Diamond">
   <title>As três funções executivas centrais e as de ordem superior (Diamond, 2013)</title>
-  <desc>Duas fileiras de tres caixas. Embaixo, as tres funcoes executivas centrais: controle inibitorio, memoria operacional e flexibilidade cognitiva. Em cima, as funcoes de ordem superior construidas sobre elas: raciocinio, resolucao de problemas e planejamento. Setas sobem da base para o topo.</desc>
-
-  <defs>
-    <marker id="seta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#605d75"/>
-    </marker>
-  </defs>
+  <desc>Uma piramide dividida em duas partes. Na base, as tres funcoes executivas centrais lado a lado: controle inibitorio, memoria operacional e flexibilidade cognitiva. No topo, as funcoes de ordem superior construidas sobre elas: raciocinio, resolucao de problemas e planejamento.</desc>
 
   <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
 
-    <!-- rótulos das fileiras -->
+    <!-- rótulos das duas partes -->
     <g font-size="14" font-weight="700" fill="#605d75" letter-spacing="1.5">
-      <text x="40" y="44">FE DE ORDEM SUPERIOR</text>
-      <text x="40" y="250">FE CENTRAIS</text>
+      <text x="40" y="212">FE DE ORDEM</text>
+      <text x="40" y="232">SUPERIOR</text>
+      <text x="40" y="282">FE CENTRAIS</text>
     </g>
 
-    <!-- ordem superior -->
-    <g fill="#4b3ba6" fill-opacity="0.08" stroke="#4b3ba6" stroke-width="2.5">
-      <rect x="40" y="60" width="240" height="96" rx="12"/>
-      <rect x="320" y="60" width="240" height="96" rx="12"/>
-      <rect x="600" y="60" width="240" height="96" rx="12"/>
-    </g>
-    <g font-size="22" font-weight="700" text-anchor="middle" fill="#4b3ba6">
-      <text x="160" y="116">raciocínio</text>
-      <text x="440" y="104">resolução de</text>
-      <text x="440" y="132">problemas</text>
-      <text x="720" y="116">planejamento</text>
+    <!-- topo: ordem superior -->
+    <path d="M 440 20 L 654 245 L 226 245 Z" fill="#4b3ba6" fill-opacity="0.08" stroke="#4b3ba6" stroke-width="2.5" stroke-linejoin="round"/>
+    <g font-size="20" font-weight="700" text-anchor="middle" fill="#4b3ba6">
+      <text x="440" y="136">raciocínio</text>
+      <text x="440" y="178">resolução de problemas</text>
+      <text x="440" y="220">planejamento</text>
     </g>
 
-    <!-- setas: cada função de ordem superior recruta as três centrais -->
-    <g stroke="#605d75" stroke-width="2" stroke-opacity="0.55" fill="none" marker-end="url(#seta)">
-      <path d="M 160 264 L 160 166"/>
-      <path d="M 440 264 L 440 166"/>
-      <path d="M 720 264 L 720 166"/>
-      <path d="M 200 264 L 410 166"/>
-      <path d="M 680 264 L 470 166"/>
-      <path d="M 400 264 L 190 166"/>
-      <path d="M 480 264 L 690 166"/>
-    </g>
-
-    <!-- centrais -->
-    <g fill="#4b3ba6" stroke="#4b3ba6" stroke-width="2.5">
-      <rect x="40" y="266" width="240" height="96" rx="12"/>
-      <rect x="320" y="266" width="240" height="96" rx="12"/>
-      <rect x="600" y="266" width="240" height="96" rx="12"/>
-    </g>
+    <!-- base: as três centrais, sem divisão entre elas -->
+    <path d="M 216 255 L 664 255 L 840 440 L 40 440 Z" fill="#4b3ba6" stroke="#4b3ba6" stroke-width="2.5" stroke-linejoin="round"/>
     <g font-size="22" font-weight="700" text-anchor="middle" fill="#faf9f6">
-      <text x="160" y="308">controle</text>
-      <text x="160" y="336">inibitório</text>
-      <text x="440" y="308">memória</text>
-      <text x="440" y="336">operacional</text>
-      <text x="720" y="308">flexibilidade</text>
-      <text x="720" y="336">cognitiva</text>
+      <text x="240" y="362">controle</text>
+      <text x="240" y="390">inibitório</text>
+      <text x="440" y="362">memória</text>
+      <text x="440" y="390">operacional</text>
+      <text x="640" y="362">flexibilidade</text>
+      <text x="640" y="390">cognitiva</text>
     </g>
 
   </g>

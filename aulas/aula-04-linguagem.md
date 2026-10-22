@@ -551,6 +551,12 @@ layout: default
 
 <Fonte>Dados de Knecht e colaboradores (2000)</Fonte>
 
+<!--
+Destro/canhoto forte: usa a mesma mão em todas as tarefas do
+Inventário de Edimburgo (escrever, tesoura, escova de dentes...).
+Ambidestro: divide as tarefas entre as duas mãos.
+-->
+
 ---
 layout: figura
 imagem: /aula-04-corpo-caloso.png

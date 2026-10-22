@@ -213,7 +213,6 @@ note: A definição e a pergunta sobre uma ou várias funções.
 layout: default
 ---
 
-# Funções executivas
 
 <Termo palavra="Funções executivas" ingles="executive functions" origem="Diamond, 2013">
 
@@ -453,34 +452,32 @@ próprio comportamento.
 
 </Termo>
 
+<Grade :cols="2">
+<Cartao rotulo="mudar de perspectiva" titulo="Ver pelo lado do outro">
+
+Entender o argumento do colega numa discussão; explicar de outro jeito para
+quem não entendeu.
+
+</Cartao>
+<Cartao rotulo="mudar de estratégia" titulo="Trocar o caminho" destaque>
+
+Tentar outro método quando o primeiro não resolve; seguir a regra nova do
+trabalho, e não a antiga.
+
+</Cartao>
+</Grade>
+
 Ela depende das outras duas: <mark>inibir</mark> a regra antiga e
 <mark>manter</mark> a nova na memória operacional.
 
 <!--
-Exemplos: mudar de estratégia quando a primeira falha; considerar o ponto de
-vista do outro; adaptar-se a uma regra nova no trabalho.
 Tarefas clássicas: Wisconsin Card Sorting Test (WCST), em que a regra de
 classificar as cartas muda sem aviso; Trail Making B, que alterna números e
 letras.
 Perseveração: continuar usando a regra antiga depois que ela mudou.
 -->
 
----
-layout: atividade
-title: Planejar uma viagem
-passos:
-  - "Em dupla, planejem um fim de semana em outra cidade com orçamento fechado"
-  - "Marquem, em cada passo do plano, qual das três funções centrais ele usou"
-  - "Refaçam o plano com o imprevisto que o professor anunciar"
----
 
-<!--
-Imprevistos possíveis: o voo foi cancelado; o hotel lotou; vai chover o fim de
-semana inteiro.
-Memória operacional: segurar as etapas (passagem, hospedagem, transporte).
-Controle inibitório: não se perder em promoções de outros destinos.
-Flexibilidade: refazer o plano diante do imprevisto.
--->
 
 ---
 layout: default
@@ -678,6 +675,8 @@ Desinibição, apatia e perda da empatia.
 
 Quase todo transtorno tem alguma disfunção executiva: o que muda é o
 <mark>perfil</mark>.
+
+Essas relações se tratam somente de uma simplificação exagerada, os quadros são muito mais complexos do que isso.
 
 <!--
 TDAH: transtorno do déficit de atenção e hiperatividade.
