@@ -57,6 +57,8 @@ Nome no padrão `aula-NN-<assunto>`, para dar para apagar tudo de uma aula de um
 | `aula-04-fatores-desenvolvimento.svg` | esquema 1 — seis fatores do desenvolvimento da linguagem, biologia × experiência |
 | `aula-04-corpo-caloso.png` | corte coronal com o corpo caloso em destaque e rótulos traduzidos — **crédito a confirmar**: ilustração de terceiro vinda dos slides antigos (`referencias/aula-04/`, p. 15) |
 | `aula-04-afasias.svg` | esquema 2 — Broca, Wernicke e condução × fluência, compreensão e repetição |
+| `aula-05-modelo-diamond.svg` | esquema 1 — pirâmide: as três FE centrais na base, as de ordem superior no topo (Diamond, 2013) |
+| `aula-05-cortex-pre-frontal.svg` | esquema 2 — dorsolateral, orbitofrontal e cingulado anterior em vista lateral e medial |
 
 Os `.png` da aula 01 são recortes das figuras de **Eysenck & Keane, _Manual de psicologia
 cognitiva_, 7ª ed. (Artmed, 2017), cap. 1** — a bibliografia da disciplina —, extraídos do
@@ -95,6 +97,12 @@ foram trocados por rótulos em português e o destaque do corpo caloso foi redes
 slides antigos não dizem de onde as duas vêm, então os slides estão sem crédito. É o mesmo
 caso do `aula-03-cerebro-hm.png`: antes de abrir o site para fora da turma, ou a fonte entra
 na legenda, ou a imagem sai.
+
+Os dois `aula-05-*.svg` são autorais: o do modelo, desenhado a partir de Diamond (2013); o do
+córtex pré-frontal, a partir dos slides antigos da aula (`referencias/aula-05/`), e diz
+"esquema" na legenda pela mesma razão que os da aula 03. As duas imagens do caso Phineas Gage
+(o retrato com a barra, em domínio público, e a reconstrução em vista medial, CC BY-SA 2.1 JP)
+entram por URL do Wikimedia Commons, com o crédito na legenda de cada slide.
 
 ### Como recortar uma figura nova de um PDF
 

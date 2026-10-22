@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" role="img" aria-label="O modelo de funcoes executivas de Diamond">
+  <title>As três funções executivas centrais e as de ordem superior (Diamond, 2013)</title>
+  <desc>Uma piramide dividida em duas partes. Na base, as tres funcoes executivas centrais lado a lado: controle inibitorio, memoria operacional e flexibilidade cognitiva. No topo, as funcoes de ordem superior construidas sobre elas: raciocinio, resolucao de problemas e planejamento.</desc>
+
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif" fill="#1e1c2b">
+
+    <!-- rótulos das duas partes -->
+    <g font-size="14" font-weight="700" fill="#605d75" letter-spacing="1.5">
+      <text x="40" y="212">FE DE ORDEM</text>
+      <text x="40" y="232">SUPERIOR</text>
+      <text x="40" y="282">FE CENTRAIS</text>
+    </g>
+
+    <!-- topo: ordem superior -->
+    <path d="M 440 20 L 654 245 L 226 245 Z" fill="#4b3ba6" fill-opacity="0.08" stroke="#4b3ba6" stroke-width="2.5" stroke-linejoin="round"/>
+    <g font-size="20" font-weight="700" text-anchor="middle" fill="#4b3ba6">
+      <text x="440" y="136">raciocínio</text>
+      <text x="440" y="178">resolução de problemas</text>
+      <text x="440" y="220">planejamento</text>
+    </g>
+
+    <!-- base: as três centrais, sem divisão entre elas -->
+    <path d="M 216 255 L 664 255 L 840 440 L 40 440 Z" fill="#4b3ba6" stroke="#4b3ba6" stroke-width="2.5" stroke-linejoin="round"/>
+    <g font-size="22" font-weight="700" text-anchor="middle" fill="#faf9f6">
+      <text x="240" y="362">controle</text>
+      <text x="240" y="390">inibitório</text>
+      <text x="440" y="362">memória</text>
+      <text x="440" y="390">operacional</text>
+      <text x="640" y="362">flexibilidade</text>
+      <text x="640" y="390">cognitiva</text>
+    </g>
+
+  </g>
+</svg>
